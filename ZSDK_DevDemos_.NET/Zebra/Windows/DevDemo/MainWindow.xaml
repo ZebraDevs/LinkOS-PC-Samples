@@ -1,0 +1,119 @@
+﻿<Window x:Class="Zebra.Windows.DevDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zebra.Windows.DevDemo"
+        xmlns:utils="clr-namespace:Zebra.Windows.DevDemo.Utils"
+        xmlns:connectivity="clr-namespace:Zebra.Windows.DevDemo.Demos.Connectivity"
+        xmlns:discovery="clr-namespace:Zebra.Windows.DevDemo.Demos.Discovery"
+        xmlns:imageprint="clr-namespace:Zebra.Windows.DevDemo.Demos.ImagePrint"
+        xmlns:listformats="clr-namespace:Zebra.Windows.DevDemo.Demos.ListFormats"
+        xmlns:magcard="clr-namespace:Zebra.Windows.DevDemo.Demos.MagCard"
+        xmlns:printerstatus="clr-namespace:Zebra.Windows.DevDemo.Demos.PrinterStatus"
+        xmlns:profile="clr-namespace:Zebra.Windows.DevDemo.Demos.Profile"
+        xmlns:sendfile="clr-namespace:Zebra.Windows.DevDemo.Demos.SendFile"
+        xmlns:settings="clr-namespace:Zebra.Windows.DevDemo.Demos.Settings"
+        xmlns:smartcard="clr-namespace:Zebra.Windows.DevDemo.Demos.SmartCard"
+        xmlns:storedformat="clr-namespace:Zebra.Windows.DevDemo.Demos.StoredFormat"
+        xmlns:connectionbuilder="clr-namespace:Zebra.Windows.DevDemo.Demos.ConnectionBuilder"
+        mc:Ignorable="d"
+        WindowStyle="None" ResizeMode="CanResizeWithGrip" AllowsTransparency="True"
+        Title="Zebra Developer Demos" MinWidth="640" Width="640" MinHeight="480" Height="480">
+    <Window.DataContext>
+        <local:MainWindowViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+        <utils:DemoViewModelNameValueConverter x:Key="converter" />
+        <DataTemplate DataType="{x:Type connectivity:ConnectivityViewModel}">
+            <connectivity:ConnectivityView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type discovery:DiscoveryViewModel}">
+            <discovery:DiscoveryView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type imageprint:ImagePrintViewModel}">
+            <imageprint:ImagePrintView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type listformats:ListFormatsViewModel}">
+            <listformats:ListFormatsView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type magcard:MagCardViewModel}">
+            <magcard:MagCardView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type printerstatus:PrinterStatusViewModel}">
+            <printerstatus:PrinterStatusView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type profile:ProfileViewModel}">
+            <profile:ProfileView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type sendfile:SendFileViewModel}">
+            <sendfile:SendFileView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type settings:SettingsViewModel}">
+            <settings:SettingsView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type smartcard:SmartCardViewModel}">
+            <smartcard:SmartCardView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type storedformat:StoredFormatViewModel}">
+            <storedformat:StoredFormatView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type connectionbuilder:ConnectionBuilderViewModel}">
+            <connectionbuilder:ConnectionBuilderView />
+        </DataTemplate>
+
+        <BitmapImage x:Key="ZebraLogoImageSource" UriSource="../../../Resources/Images/Zebra_Logo_W.png" />
+    </Window.Resources>
+    <DockPanel>
+        <Grid x:Name="titleBar" DockPanel.Dock="Top" Background="#007CB0" MouseDown="TitleBar_MouseDown">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Source="{StaticResource ZebraLogoImageSource}" Width="120" Height="40" Margin="15" />
+            <Menu Grid.Column="1" VerticalAlignment="Center" Background="Transparent">
+                <Menu.Resources>
+                    <Style x:Key="TopLevelHeader" TargetType="MenuItem">
+                        <Setter Property="BorderThickness" Value="0" />
+                        <Setter Property="FontSize" Value="16" />
+                        <Setter Property="FontWeight" Value="Bold" />
+                        <Setter Property="Foreground" Value="White" />
+                        <Setter Property="Margin" Value="5,0" />
+                        <Setter Property="Padding" Value="15,10" />
+                    </Style>
+                    <Style x:Key="TopLevelItem" TargetType="MenuItem">
+                        <Setter Property="BorderThickness" Value="0" />
+                        <Setter Property="FontSize" Value="12" />
+                        <Setter Property="FontWeight" Value="Normal" />
+                        <Setter Property="Foreground" Value="Black" />
+                        <Setter Property="Margin" Value="0" />
+                    </Style>
+                </Menu.Resources>
+                <MenuItem Style="{StaticResource TopLevelHeader}" Header="_File">
+                    <MenuItem Style="{StaticResource TopLevelItem}" Header="_Quit" Click="QuitMenuItem_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem Style="{StaticResource TopLevelHeader}" Header="_Help">
+                    <MenuItem Style="{StaticResource TopLevelItem}" Header="_About..." Click="AboutMenuItem_Click"></MenuItem>
+                </MenuItem>
+            </Menu>
+            <TextBlock x:Name="closeButton" Grid.Column="2" Foreground="White" FontWeight="Bold" FontSize="24" Padding="10,0" VerticalAlignment="Top" HorizontalAlignment="Right" PreviewMouseLeftButtonDown="CloseButton_PreviewMouseLeftButtonDown">×</TextBlock>
+        </Grid>
+        <DockPanel DockPanel.Dock="Left" Margin="10" Width="150">
+            <TextBlock Style="{StaticResource ZebraHeader}" DockPanel.Dock="Top" Margin="0,0,0,10">Available Demos</TextBlock>
+            <ListBox ItemsSource="{Binding DemoViewModels}">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListBoxItem}">
+                        <EventSetter Event="PreviewMouseLeftButtonDown" Handler="ListBoxItem_PreviewMouseLeftButtonDown" />
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <ContentPresenter Content="{Binding Converter={StaticResource converter}}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </DockPanel>
+        <ContentControl Content="{Binding CurrentDemoViewModel}" />
+    </DockPanel>
+</Window>

@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="Zebra.Windows.DevDemo.Demos.ListFormats.ListFormatsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Zebra.Windows.DevDemo.Demos.ListFormats"
+             xmlns:usercontrols="clr-namespace:Zebra.Windows.DevDemo.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <local:ListFormatsViewModel />
+    </UserControl.DataContext>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Style="{StaticResource ZebraHeader}" Margin="0,0,0,10">List Formats</TextBlock>
+        <usercontrols:ConnectionSelectorView x:Name="connectionSelector" Grid.Row="1" Margin="0,0,0,15" />
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="retrieveFilesButton" Margin="0,0,5,0" Click="RetrieveFilesButton_Click">Retrieve Files</Button>
+            <Button x:Name="retrieveFormatsButton" Grid.Column="1" Margin="5,0,0,0" Click="RetrieveFormatsButton_Click">Retrieve Formats</Button>
+        </Grid>
+        <Separator Grid.Row="3" Margin="0,15,0,15" />
+        <TextBlock Style="{StaticResource ZebraHeader}" Grid.Row="4" Margin="0,0,0,10">Retrieved Files / Formats</TextBlock>
+        <ListBox ItemsSource="{Binding FormatsList}" Grid.Row="5" x:Name="storedFilesList"></ListBox>
+    </Grid>
+</UserControl>

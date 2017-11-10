@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Zebra.Windows.DevDemo.Demos.ConnectionBuilder.ConnectionBuilderView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Zebra.Windows.DevDemo.Demos.ConnectionBuilder"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <local:ConnectionBuilderViewModel />
+    </UserControl.DataContext>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Style="{StaticResource ZebraHeader}" Grid.ColumnSpan="2" Margin="0,0,0,10">Connection Builder</TextBlock>
+        <TextBlock Grid.Row="1" Name="AddressTextBlock" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,10">Address:</TextBlock>
+        <TextBox x:Name="usbDriverIpAddress" Style="{StaticResource ZebraTextInput}" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10" VerticalAlignment="Center" KeyUp="UsbDriverIpAddress_KeyUp" />
+        <TextBlock Grid.Row="2" Margin="0,0,10,10" VerticalAlignment="Center">Connection Prefix:</TextBlock>
+        <ComboBox x:Name="connectionPrefixDropdown" ItemsSource="{Binding ConnectionPrefixes}" Width="180" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,10" SelectionChanged="ConnectionPrefixDropdown_SelectionChanged" />
+        <TextBlock Grid.Row="3" Margin="0,0,10,15" VerticalAlignment="Center">Connection String:</TextBlock>
+        <TextBlock x:Name="connectionString" Grid.Row="3" Grid.Column="1" Margin="0,0,0,15" VerticalAlignment="Center" />
+        <Button x:Name="testConnectionStringButton" Grid.Row="4" Grid.ColumnSpan="2" Click="TestConnectionStringButton_Click">Test Connection String</Button>
+        <Separator Grid.Row="5" Grid.ColumnSpan="2" Margin="0,15,0,15" />
+        <TextBlock Style="{StaticResource ZebraHeader}" Grid.Row="6" Grid.ColumnSpan="2" Margin="0,0,0,10">Log</TextBlock>
+        <TextBox x:Name="logData" Text="{Binding LogData}" Grid.Row="7" Grid.ColumnSpan="2" AcceptsReturn="True" TextWrapping="NoWrap" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"></TextBox>
+    </Grid>
+</UserControl>

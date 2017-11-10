@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B42A994-831D-4EAF-B40F-436166CD5B6A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Zebra.Windows.DevDemo</RootNamespace>
+    <AssemblyName>DeveloperDemo_Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Zebra\Windows\DevDemo\zebralogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>Sdk\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreFtp">
+      <HintPath>Sdk\CoreFtp.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper">
+      <HintPath>Sdk\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions">
+      <HintPath>Sdk\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory">
+      <HintPath>Sdk\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>Sdk\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>Sdk\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>Sdk\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>Sdk\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Sdk\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SdkApi_Core">
+      <HintPath>Sdk\SdkApi_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SdkApi_Desktop">
+      <HintPath>Sdk\SdkApi_Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="SdkApi_Desktop_Usb">
+      <HintPath>Sdk\SdkApi_Desktop_Usb.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime">
+      <HintPath>Sdk\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Sdk\System.Runtime.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Windows, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Sdk\Windows.winmd</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Zebra\Windows\DevDemo\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\ConnectionBuilder\ConnectionBuilderView.xaml.cs">
+      <DependentUpon>ConnectionBuilderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\ConnectionBuilder\ConnectionBuilderViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\ConnectionBuilder\ConnectionPrefix.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\ImagePrint\ImagePrintView.xaml.cs">
+      <DependentUpon>ImagePrintView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\ImagePrint\ImagePrintViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\ListFormats\ListFormatsView.xaml.cs">
+      <DependentUpon>ListFormatsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\ListFormats\ListFormatsViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\MagCard\MagCardView.xaml.cs">
+      <DependentUpon>MagCardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\MagCard\MagCardViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\PrinterStatus\PrinterStatusView.xaml.cs">
+      <DependentUpon>PrinterStatusView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\PrinterStatus\PrinterStatusViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\Profile\ProfileView.xaml.cs">
+      <DependentUpon>ProfileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\Profile\ProfileViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\SendFile\SendFileView.xaml.cs">
+      <DependentUpon>SendFileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\SendFile\SendFileViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\Settings\Setting.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\Settings\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\Settings\SettingsViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\SmartCard\SmartCardView.xaml.cs">
+      <DependentUpon>SmartCardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\SmartCard\SmartCardViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\StoredFormat\FormatVariable.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\StoredFormat\StoredFormatView.xaml.cs">
+      <DependentUpon>StoredFormatView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\StoredFormat\StoredFormatViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Dialogs\AboutDialog.xaml.cs">
+      <DependentUpon>AboutDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Dialogs\StoredFormatDialog.xaml.cs">
+      <DependentUpon>StoredFormatDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Dialogs\StoredFormatDialogViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Enums\ConnectionState.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Enums\DiscoveryMethod.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\UserControls\ConnectionSelectorViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Enums\ConnectionType.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\UserControls\ConnectionSelectorView.xaml.cs">
+      <DependentUpon>ConnectionSelectorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\UserControls\FileSelectorView.xaml.cs">
+      <DependentUpon>FileSelectorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\UserControls\FileSelectorViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Utils\BluetoothHelper.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Utils\ConnectionTypeDescriptionValueConverter.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Utils\DemoViewModelNameValueConverter.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Utils\DiscoveryMethodDescriptionValueConverter.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Utils\MessageBoxCreator.cs" />
+    <Page Include="Zebra\Windows\DevDemo\Demos\ConnectionBuilder\ConnectionBuilderView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\Connectivity\ConnectivityView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\Discovery\DiscoveryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\ImagePrint\ImagePrintView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\ListFormats\ListFormatsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\MagCard\MagCardView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\PrinterStatus\PrinterStatusView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\Profile\ProfileView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\SendFile\SendFileView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\Settings\SettingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\SmartCard\SmartCardView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Demos\StoredFormat\StoredFormatView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Dialogs\AboutDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\Dialogs\StoredFormatDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Zebra\Windows\DevDemo\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\Connectivity\ConnectivityView.xaml.cs">
+      <DependentUpon>ConnectivityView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\Connectivity\ConnectivityViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\Discovery\DiscoveryView.xaml.cs">
+      <DependentUpon>DiscoveryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zebra\Windows\DevDemo\Demos\Discovery\DiscoveryViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\Demos\IDemoViewModel.cs" />
+    <Compile Include="Zebra\Windows\DevDemo\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Zebra\Windows\DevDemo\UserControls\ConnectionSelectorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Zebra\Windows\DevDemo\UserControls\FileSelectorView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Zebra\Windows\DevDemo\MainWindowViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Zebra_Logo_K.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Zebra\Windows\DevDemo\zebralogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Zebra_Logo_W.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
