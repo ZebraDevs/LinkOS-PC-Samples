@@ -2,6 +2,11 @@
 ## END USER LICENSE AGREEMENT ##
 **(UNRESTRICTED SOFTWARE)** 
  [link](http://link-os.github.io/Zebra_SDK_EULA.pdf)
+ 
+ ## Projects contained in this repository:
+[ZSDK_DevDemos_Java]( https://github.com/Zebra/LinkOS-PC-Samples/tree/ZSDK_DevDemos_Java)
+[ZSDK_DevDemos_.NET]( https://github.com/Zebra/LinkOS-PC-Samples/tree/ZSDK_DevDemos_.NET)
+
 
 
 **IMPORTANT PLEASE READ CAREFULLY:** This End User License Agreement ("EULA") is a legal
