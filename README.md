@@ -1,7 +1,9 @@
 # LinkOS-PC-Samples
 
 ## Projects contained in this repository:
+
 [ZSDK_DevDemos_Java]( https://github.com/Zebra/LinkOS-PC-Samples/tree/ZSDK_DevDemos_Java)
+
 [ZSDK_DevDemos_.NET]( https://github.com/Zebra/LinkOS-PC-Samples/tree/ZSDK_DevDemos_.NET)
 
 
