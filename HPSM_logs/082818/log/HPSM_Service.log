@@ -1,0 +1,878 @@
+2018-08-21 08:10:34,608 INFO  Service   [4] - TaskSupervisor.Init - HPSM Starting
+2018-08-21 08:10:46,383 INFO  Service   [4] - Successfully started DSSessionVariables() - hibernate session
+2018-08-21 08:10:46,383 INFO  Service   [4] - ScheduleTaskManager.RetryDBConnection Testing DB connection to: Server=(local)\SQLEXPRESS_2014;initial catalog=HPIPSC;Integrated Security=SSPI; 
+2018-08-21 08:10:46,384 INFO  Service   [4] -  - Done TestDBConnection 
+2018-08-21 08:10:46,384 INFO  Service   [4] - ScheduleTaskManager.RetryDBConnection Testing DB connection successfull to: Server=(local)\SQLEXPRESS_2014;initial catalog=HPIPSC;Integrated Security=SSPI; 
+2018-08-21 08:10:46,384 INFO  Service   [4] - Service Starting up - Init() 
+2018-08-21 08:10:46,544 INFO  Service   [4] - BizLogicMgr.IsValidProductDB - productId 3E90D780-8D8F-40F2-BA4F-DCCAE7A9E0EB metaData.ID3E90D780-8D8F-40F2-BA4F-DCCAE7A9E0EB
+2018-08-21 08:10:47,142 INFO  Service   [4] - Service Version:  3.2.1.8512
+2018-08-21 08:10:47,162 INFO  Service   [4] - Shrinking the DB log file
+2018-08-21 08:10:47,162 INFO  Service   [4] -  - Shrinking DB 
+2018-08-21 08:10:47,302 INFO  Service   [4] -  - Done Shrinking DB 
+2018-08-21 08:10:47,302 INFO  Service   [4] - Service Starting up - Successfully shrink DB logs 
+2018-08-21 08:10:47,703 INFO  Service   [4] - Current Version - 7
+2018-08-21 08:10:47,733 WARN  Service   [4] - DataKeys - Saving DataKeys - this should only happend once right after Install or Upgrade
+2018-08-21 08:10:47,860 INFO  Service   [4] - Server Configuration:  :Remediation Mode:  License Information:   # License available:  0  # License assigned:  0  # Days to Expires:  0  Last time connect to License Server:  12/31/99 11:59  Connection :  12/31/99 11:59 :UI Is Locksmith Server:  : Generate PASSed recommendations:  :Do NOT use direct listner: Do Auto Assessment On Announcement:   :Server name=  80W7-SSI1 address= 10.80.127.153 state:Active  : Discovery authentication mode=  NoAuthentication  Do NOT Serial Number Authentication:   :Children #:  0
+2018-08-21 08:10:47,920 INFO  Service   [4] - Service  & ServerConfig Started successfully
+2018-08-21 08:10:47,940 INFO  Service   [13] - MaintenanceTaskManager - Started.
+2018-08-21 08:10:47,940 INFO  Service   [15] - LicenseTaskManager - Started.
+2018-08-21 08:10:47,940 INFO  Service   [16] - AutoGroupsTaskManager - Started.
+2018-08-21 08:10:53,089 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.Connect using IPs : 10.80.127.153 : 10.80.127.153 device features:  :  devices version:  :  host addr: net.tcp://10.80.127.153:8888/LicensingService ok to LogErrors: True
+2018-08-21 08:10:53,283 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.Connect ping test: True
+2018-08-21 08:10:53,364 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.Connect succeeded
+2018-08-21 08:10:53,386 INFO  Service   [License Task 8/21/18 08:10] - About to call the method GetSeatInfoForFeature
+2018-08-21 08:10:53,387 INFO  Service   [License Task 8/21/18 08:10] - License feature count = 4
+2018-08-21 08:10:53,394 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_LIMITED_POLICY  session: 137806072a4a49c189b44ab6d56e159f
+2018-08-21 08:10:53,441 ERROR Service   [License Task 8/21/18 08:10] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:10:53,441 WARN  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_LIMITED_POLICY  Error: -106
+2018-08-21 08:10:53,442 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEVICES session: 137806072a4a49c189b44ab6d56e159f
+2018-08-21 08:10:53,446 ERROR Service   [License Task 8/21/18 08:10] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:10:53,447 WARN  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEVICES Error: -106
+2018-08-21 08:10:53,447 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEMO session: 137806072a4a49c189b44ab6d56e159f
+2018-08-21 08:10:53,451 ERROR Service   [License Task 8/21/18 08:10] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:10:53,452 WARN  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEMO Error: -106
+2018-08-21 08:10:53,452 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_CMPS session: 137806072a4a49c189b44ab6d56e159f
+2018-08-21 08:10:53,654 INFO  Service   [License Task 8/21/18 08:10] - LicenseMgr.Instance - Licensing Initialized successfully
+2018-08-21 08:10:53,659 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.Connect using IPs : 10.80.127.153 : 10.80.127.153 device features:  :  devices version:  :  host addr: net.tcp://10.80.127.153:8888/LicensingService ok to LogErrors: True
+2018-08-21 08:10:53,696 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.Connect ping test: True
+2018-08-21 08:10:53,720 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.Connect succeeded
+2018-08-21 08:10:53,750 INFO  Service   [License Task 8/21/18 08:10] - About to call the method GetSeatInfoForFeature
+2018-08-21 08:10:53,750 INFO  Service   [License Task 8/21/18 08:10] - License feature count = 4
+2018-08-21 08:10:53,751 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_LIMITED_POLICY  session: efbf6de9a3f044edb5cd58d74620002b
+2018-08-21 08:10:53,768 ERROR Service   [License Task 8/21/18 08:10] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:10:53,769 WARN  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_LIMITED_POLICY  Error: -106
+2018-08-21 08:10:53,769 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEVICES session: efbf6de9a3f044edb5cd58d74620002b
+2018-08-21 08:10:53,773 ERROR Service   [License Task 8/21/18 08:10] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:10:53,774 WARN  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEVICES Error: -106
+2018-08-21 08:10:53,774 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEMO session: efbf6de9a3f044edb5cd58d74620002b
+2018-08-21 08:10:53,778 ERROR Service   [License Task 8/21/18 08:10] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:10:53,778 WARN  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEMO Error: -106
+2018-08-21 08:10:53,779 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_CMPS session: efbf6de9a3f044edb5cd58d74620002b
+2018-08-21 08:10:57,984 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.Connect using IPs : 10.80.127.153 : 10.80.127.153 device features:  :  devices version:  :  host addr: net.tcp://10.80.127.153:8888/LicensingService ok to LogErrors: True
+2018-08-21 08:10:58,004 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.Connect ping test: True
+2018-08-21 08:10:58,034 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.Connect succeeded
+2018-08-21 08:10:58,054 INFO  Service   [License Task 8/21/18 08:10] - About to call the method GetSeatInfoForFeature
+2018-08-21 08:10:58,054 INFO  Service   [License Task 8/21/18 08:10] - License feature count = 4
+2018-08-21 08:10:58,054 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_LIMITED_POLICY  session: e95b3c31a66443b8abc0fa9fda29edc9
+2018-08-21 08:10:58,084 ERROR Service   [License Task 8/21/18 08:10] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:10:58,084 WARN  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_LIMITED_POLICY  Error: -106
+2018-08-21 08:10:58,084 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEVICES session: e95b3c31a66443b8abc0fa9fda29edc9
+2018-08-21 08:10:58,094 ERROR Service   [License Task 8/21/18 08:10] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:10:58,094 WARN  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEVICES Error: -106
+2018-08-21 08:10:58,094 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEMO session: e95b3c31a66443b8abc0fa9fda29edc9
+2018-08-21 08:10:58,094 ERROR Service   [License Task 8/21/18 08:10] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:10:58,094 WARN  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEMO Error: -106
+2018-08-21 08:10:58,094 INFO  Service   [License Task 8/21/18 08:10] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_CMPS session: e95b3c31a66443b8abc0fa9fda29edc9
+2018-08-21 08:13:54,105 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [4] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-21 08:13:59,602 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [46] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-21 08:39:17,008 INFO  Service NT AUTHORITY\NETWORK SERVICE  [389] - LicenseWrapper.Connect using IPs : 10.80.127.153 : 10.80.127.153 device features:  :  devices version:  :  host addr: net.tcp://10.80.127.153:8888/LicensingService ok to LogErrors: True
+2018-08-21 08:39:17,029 INFO  Service NT AUTHORITY\NETWORK SERVICE  [389] - LicenseWrapper.Connect ping test: True
+2018-08-21 08:39:17,049 INFO  Service NT AUTHORITY\NETWORK SERVICE  [389] - LicenseWrapper.Connect succeeded
+2018-08-21 08:39:29,405 INFO  Service NT AUTHORITY\NETWORK SERVICE  [389] - About to call the method GetSeatInfoForFeature
+2018-08-21 08:39:29,407 INFO  Service NT AUTHORITY\NETWORK SERVICE  [389] - License feature count = 4
+2018-08-21 08:39:29,408 INFO  Service NT AUTHORITY\NETWORK SERVICE  [389] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_LIMITED_POLICY  session: 9d1646d1b097432792dca08f801cd213
+2018-08-21 08:39:29,434 ERROR Service NT AUTHORITY\NETWORK SERVICE  [389] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:39:29,435 WARN  Service NT AUTHORITY\NETWORK SERVICE  [389] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_LIMITED_POLICY  Error: -106
+2018-08-21 08:39:29,436 INFO  Service NT AUTHORITY\NETWORK SERVICE  [389] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEVICES session: 9d1646d1b097432792dca08f801cd213
+2018-08-21 08:39:29,441 ERROR Service NT AUTHORITY\NETWORK SERVICE  [389] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-21 08:39:29,442 WARN  Service NT AUTHORITY\NETWORK SERVICE  [389] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEVICES Error: -106
+2018-08-21 08:39:29,443 INFO  Service NT AUTHORITY\NETWORK SERVICE  [389] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEMO session: 9d1646d1b097432792dca08f801cd213
+2018-08-21 08:44:34,955 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [46] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-21 08:48:00,302 WARN  Service NT AUTHORITY\NETWORK SERVICE  [1173] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-21 08:50:33,448 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [46] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-21 09:17:02,159 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [301] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-21 09:17:07,799 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [312] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-21 15:10:38,057 INFO  Service   [768] - BackgroundTask.DoWork - Starting
+2018-08-21 15:10:38,197 ERROR Service   [768] - Saving DeviceAssessmentLog with Deleted state - id: 48e96e03-fd27-4967-83e8-a943009d7744 device:  Ip: 10.80.127.56  Mac: 00074D504346  policy: Base
+2018-08-21 15:10:38,257 INFO  Service   [768] - BackgroundTask.DoWork - Policy Deletion Background Task Ending
+2018-08-22 01:01:00,837 INFO  Service   [1053] -    Doing Maintenance Task processing
+2018-08-22 01:01:00,837 INFO  Service   [1053] -    Done doing Maintenance Task processing
+2018-08-22 01:01:00,847 INFO  Service   [Maintenance Task 8/22/18 01:01] - MaintenanceTask.DoWork - Starting
+2018-08-22 01:01:00,947 INFO  Service   [Maintenance Task 8/22/18 01:01] - CascadeDeleteRecommendationsTrans - Done Removing Recommendations: 65
+2018-08-22 01:01:00,947 INFO  Service   [Maintenance Task 8/22/18 01:01] - BizLogicMgrHelper.RemoveMarkedForDeletionRecommendations - Done deleting 65 records
+2018-08-22 01:01:00,967 INFO  Service   [Maintenance Task 8/22/18 01:01] - BizLogicMgrHelper.RemoveUnusedRecommendations - no Assessment & Unique PolicyIDs found - no valid recommendation yet, skipping
+2018-08-22 01:01:01,027 INFO  Service   [Maintenance Task 8/22/18 01:01] -  - Done Removing marked for deletion device changes
+2018-08-22 01:01:01,057 INFO  Service   [Maintenance Task 8/22/18 01:01] - CascadeDeleteDevicesTrans - Done Removing Devices: 0
+2018-08-22 01:01:01,057 INFO  Service   [Maintenance Task 8/22/18 01:01] - BizLogicMgrHelper.RemoveMarkedForDeletionDevices - Done deleting 0 records
+2018-08-22 01:01:01,460 INFO  Service   [Maintenance Task 8/22/18 01:01] - MaintenanceTask.DoWork - Maintenance Task Ending
+2018-08-22 08:09:57,754 INFO  Service   [License Task 8/22/18 08:09] - LicenseWrapper.Connect using IPs : 10.80.127.153 : 10.80.127.153 device features:  :  devices version:  :  host addr: net.tcp://10.80.127.153:8888/LicensingService ok to LogErrors: True
+2018-08-22 08:09:57,776 INFO  Service   [License Task 8/22/18 08:09] - LicenseWrapper.Connect ping test: True
+2018-08-22 08:09:57,796 INFO  Service   [License Task 8/22/18 08:09] - LicenseWrapper.Connect succeeded
+2018-08-22 08:09:57,813 INFO  Service   [License Task 8/22/18 08:09] - About to call the method GetSeatInfoForFeature
+2018-08-22 08:09:57,814 INFO  Service   [License Task 8/22/18 08:09] - License feature count = 4
+2018-08-22 08:09:57,815 INFO  Service   [License Task 8/22/18 08:09] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_LIMITED_POLICY  session: efb153aa83584fcd848d7678a22e1c97
+2018-08-22 08:09:57,838 ERROR Service   [License Task 8/22/18 08:09] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-22 08:09:57,839 WARN  Service   [License Task 8/22/18 08:09] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_LIMITED_POLICY  Error: -106
+2018-08-22 08:09:57,840 INFO  Service   [License Task 8/22/18 08:09] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEVICES session: efb153aa83584fcd848d7678a22e1c97
+2018-08-22 08:09:57,844 ERROR Service   [License Task 8/22/18 08:09] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-22 08:09:57,845 WARN  Service   [License Task 8/22/18 08:09] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEVICES Error: -106
+2018-08-22 08:09:57,846 INFO  Service   [License Task 8/22/18 08:09] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEMO session: efb153aa83584fcd848d7678a22e1c97
+2018-08-23 01:01:01,952 INFO  Service   [994] -    Doing Maintenance Task processing
+2018-08-23 01:01:01,955 INFO  Service   [994] -    Done doing Maintenance Task processing
+2018-08-23 01:01:01,955 INFO  Service   [Maintenance Task 8/23/18 01:01] - MaintenanceTask.DoWork - Starting
+2018-08-23 01:01:02,002 INFO  Service   [Maintenance Task 8/23/18 01:01] - CascadeDeleteRecommendationsTrans - Done Removing Recommendations: 0
+2018-08-23 01:01:02,003 INFO  Service   [Maintenance Task 8/23/18 01:01] - BizLogicMgrHelper.RemoveMarkedForDeletionRecommendations - Done deleting 0 records
+2018-08-23 01:01:02,005 INFO  Service   [Maintenance Task 8/23/18 01:01] - BizLogicMgrHelper.RemoveUnusedRecommendations - no Assessment & Unique PolicyIDs found - no valid recommendation yet, skipping
+2018-08-23 01:01:02,020 INFO  Service   [Maintenance Task 8/23/18 01:01] -  - Done Removing marked for deletion device changes
+2018-08-23 01:01:02,022 INFO  Service   [Maintenance Task 8/23/18 01:01] - CascadeDeleteDevicesTrans - Done Removing Devices: 0
+2018-08-23 01:01:02,023 INFO  Service   [Maintenance Task 8/23/18 01:01] - BizLogicMgrHelper.RemoveMarkedForDeletionDevices - Done deleting 0 records
+2018-08-23 01:01:02,031 INFO  Service   [Maintenance Task 8/23/18 01:01] - MaintenanceTask.DoWork - Maintenance Task Ending
+2018-08-23 08:08:56,519 INFO  Service   [License Task 8/23/18 08:08] - LicenseWrapper.Connect using IPs : 10.80.127.153 : 10.80.127.153 device features:  :  devices version:  :  host addr: net.tcp://10.80.127.153:8888/LicensingService ok to LogErrors: True
+2018-08-23 08:08:56,546 INFO  Service   [License Task 8/23/18 08:08] - LicenseWrapper.Connect ping test: True
+2018-08-23 08:08:56,565 INFO  Service   [License Task 8/23/18 08:08] - LicenseWrapper.Connect succeeded
+2018-08-23 08:08:56,589 INFO  Service   [License Task 8/23/18 08:08] - About to call the method GetSeatInfoForFeature
+2018-08-23 08:08:56,589 INFO  Service   [License Task 8/23/18 08:08] - License feature count = 4
+2018-08-23 08:08:56,590 INFO  Service   [License Task 8/23/18 08:08] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_LIMITED_POLICY  session: f05a196049f44c418fbbf1217b2f08e2
+2018-08-23 08:08:56,608 ERROR Service   [License Task 8/23/18 08:08] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-23 08:08:56,608 WARN  Service   [License Task 8/23/18 08:08] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_LIMITED_POLICY  Error: -106
+2018-08-23 08:08:56,609 INFO  Service   [License Task 8/23/18 08:08] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEVICES session: f05a196049f44c418fbbf1217b2f08e2
+2018-08-23 08:08:56,613 ERROR Service   [License Task 8/23/18 08:08] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-23 08:08:56,614 WARN  Service   [License Task 8/23/18 08:08] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEVICES Error: -106
+2018-08-23 08:08:56,615 INFO  Service   [License Task 8/23/18 08:08] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEMO session: f05a196049f44c418fbbf1217b2f08e2
+2018-08-23 08:51:46,134 WARN  Service NT AUTHORITY\NETWORK SERVICE  [667] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-23 08:51:46,148 WARN  Service NT AUTHORITY\NETWORK SERVICE  [667] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-23 08:51:46,162 WARN  Service NT AUTHORITY\NETWORK SERVICE  [667] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-23 08:53:38,412 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [786] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-23 08:53:44,330 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [786] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-23 08:54:01,558 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [301] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-23 10:46:28,578 INFO  Service NT AUTHORITY\NETWORK SERVICE  [1064] - TaskSupervisor.StartPortListner - Starting Port Listner
+2018-08-23 11:05:09,797 INFO  Service NT AUTHORITY\NETWORK SERVICE  [1059] - TaskSupervisor - ShutdownPortListner
+2018-08-23 13:58:12,863 INFO  Service   [240] - BackgroundTask.DoWork - Starting
+2018-08-23 13:58:12,928 ERROR Service   [240] - BizLogicMgr.DeleteAssessmentLogForPolicyInDB - did not find in DB
+2018-08-23 13:58:12,981 INFO  Service   [240] - BackgroundTask.DoWork - Policy Deletion Background Task Ending
+2018-08-23 13:58:27,894 INFO  Service   [240] - BackgroundTask.DoWork - Starting
+2018-08-23 13:58:27,934 ERROR Service   [240] - BizLogicMgr.DeleteAssessmentLogForPolicyInDB - did not find in DB
+2018-08-23 13:58:28,005 ERROR Service   [240] - BizLogicMgr.DeleteAssessmentLogForPolicyInDB - did not find in DB
+2018-08-23 13:58:28,055 INFO  Service   [240] - BackgroundTask.DoWork - Policy Deletion Background Task Ending
+2018-08-23 13:58:28,082 INFO  Service   [1009] - BackgroundTask.DoWork - Starting
+2018-08-23 13:58:28,103 INFO  Service   [1009] - BackgroundTask.DoWork - Policy Deletion Background Task Ending
+2018-08-23 14:21:38,093 INFO  Service   [367] - BackgroundTask.DoWork - Starting
+2018-08-23 14:21:38,140 ERROR Service   [367] - BizLogicMgr.DeleteAssessmentLogForPolicyInDB - did not find in DB
+2018-08-23 14:21:38,192 INFO  Service   [367] - BackgroundTask.DoWork - Policy Deletion Background Task Ending
+2018-08-23 14:28:47,332 WARN  Service NT AUTHORITY\NETWORK SERVICE  [1370] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-23 14:45:44,058 INFO  Service   [1382] - RemediationMcoRequest - recommendationAction dat id name :TelnetEnabled
+2018-08-23 14:45:44,064 INFO  Service   [1382] - RemediationMcoRequest - recommendationAction dat id name :FtpEnabled
+2018-08-23 14:45:44,065 INFO  Service   [1382] - RemediationMcoRequest - recommendationAction dat id name :GetCommunityName
+2018-08-23 14:45:44,066 INFO  Service   [1382] - RemediationMcoRequest - recommendationAction dat id name :SetCommunityName
+2018-08-23 14:49:49,553 ERROR NHibernate.Event.Default.AbstractFlushingEventListener  NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [DataObjects.Device#e8c97c2c-6b30-47e1-91e5-a9430091b4d4]__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)__   at NHibernate.Action.EntityUpdateAction.Execute()__   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)__   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)__   at NHibernate.Engine.ActionQueue.ExecuteActions()__   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+ [1382] - Could not synchronize database state with session
+2018-08-23 14:49:49,651 ERROR NHibernate.Event.Default.AbstractFlushingEventListener  NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [DataObjects.Device#e8c97c2c-6b30-47e1-91e5-a9430091b4d4]__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)__   at NHibernate.Action.EntityUpdateAction.Execute()__   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)__   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)__   at NHibernate.Engine.ActionQueue.ExecuteActions()__   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+ [1382] - Could not synchronize database state with session
+2018-08-23 14:49:50,154 ERROR NHibernate.Event.Default.AbstractFlushingEventListener  NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [DataObjects.Device#e8c97c2c-6b30-47e1-91e5-a9430091b4d4]__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)__   at NHibernate.Action.EntityUpdateAction.Execute()__   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)__   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)__   at NHibernate.Engine.ActionQueue.ExecuteActions()__   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+ [1382] - Could not synchronize database state with session
+2018-08-23 14:49:50,284 ERROR NHibernate.Event.Default.AbstractFlushingEventListener  NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [DataObjects.Device#e8c97c2c-6b30-47e1-91e5-a9430091b4d4]__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)__   at NHibernate.Action.EntityUpdateAction.Execute()__   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)__   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)__   at NHibernate.Engine.ActionQueue.ExecuteActions()__   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+ [1382] - Could not synchronize database state with session
+2018-08-23 14:49:50,501 ERROR NHibernate.Event.Default.AbstractFlushingEventListener  NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [DataObjects.Device#e8c97c2c-6b30-47e1-91e5-a9430091b4d4]__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)__   at NHibernate.Action.EntityUpdateAction.Execute()__   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)__   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)__   at NHibernate.Engine.ActionQueue.ExecuteActions()__   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+ [1398] - Could not synchronize database state with session
+2018-08-23 14:49:50,522 ERROR NHibernate.Event.Default.AbstractFlushingEventListener  NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [DataObjects.Device#e8c97c2c-6b30-47e1-91e5-a9430091b4d4]__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)__   at NHibernate.Action.EntityUpdateAction.Execute()__   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)__   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)__   at NHibernate.Engine.ActionQueue.ExecuteActions()__   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+ [1398] - Could not synchronize database state with session
+2018-08-23 14:49:50,679 ERROR NHibernate.Event.Default.AbstractFlushingEventListener  NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [DataObjects.Device#e8c97c2c-6b30-47e1-91e5-a9430091b4d4]__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)__   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)__   at NHibernate.Action.EntityUpdateAction.Execute()__   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)__   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)__   at NHibernate.Engine.ActionQueue.ExecuteActions()__   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+ [1398] - Could not synchronize database state with session
+2018-08-23 15:32:03,972 WARN  Service   [1238] - Task - Error trying to ResolveHostName for: xxqlj141300691_.zebra.lan System.Net.Sockets.SocketException (0x80004005): The requested name is valid, but no data of the requested type was found__   at System.Net.Dns.GetAddrInfo(String name)__   at System.Net.Dns.InternalGetHostByName(String hostName, Boolean includeIPv6)__   at System.Net.Dns.GetHostEntry(String hostNameOrAddress)__   at TaskManager.Task.ResolveHostName(DeviceSummary deviceSummary)
+2018-08-23 15:32:03,973 WARN  Service   [1238] - Task - Unable to ResolveHostName for: xxqlj141300691_.zebra.lan
+2018-08-23 15:49:54,111 WARN  Service   [198] - Task - Error trying to ResolveHostName for: xxqlj141300691_.zebra.lan System.Net.Sockets.SocketException (0x80004005): The requested name is valid, but no data of the requested type was found__   at System.Net.Dns.GetAddrInfo(String name)__   at System.Net.Dns.InternalGetHostByName(String hostName, Boolean includeIPv6)__   at System.Net.Dns.GetHostEntry(String hostNameOrAddress)__   at TaskManager.Task.ResolveHostName(DeviceSummary deviceSummary)
+2018-08-23 15:49:54,113 WARN  Service   [198] - Task - Unable to ResolveHostName for: xxqlj141300691_.zebra.lan
+2018-08-23 16:05:10,780 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [999] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-23 16:05:35,747 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [999] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-23 16:10:02,917 WARN  Service NT AUTHORITY\NETWORK SERVICE  [1232] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-23 16:10:02,948 WARN  Service NT AUTHORITY\NETWORK SERVICE  [1232] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-23 16:10:14,995 WARN  Service   [407] - Task - Error trying to ResolveHostName for: xxqlj141300691_.zebra.lan System.Net.Sockets.SocketException (0x80004005): The requested name is valid, but no data of the requested type was found__   at System.Net.Dns.GetAddrInfo(String name)__   at System.Net.Dns.InternalGetHostByName(String hostName, Boolean includeIPv6)__   at System.Net.Dns.GetHostEntry(String hostNameOrAddress)__   at TaskManager.Task.ResolveHostName(DeviceSummary deviceSummary)
+2018-08-23 16:10:14,995 WARN  Service   [407] - Task - Unable to ResolveHostName for: xxqlj141300691_.zebra.lan
+2018-08-24 01:00:59,738 INFO  Service   [1380] -    Doing Maintenance Task processing
+2018-08-24 01:00:59,738 INFO  Service   [1380] -    Done doing Maintenance Task processing
+2018-08-24 01:00:59,738 INFO  Service   [Maintenance Task 8/24/18 01:00] - MaintenanceTask.DoWork - Starting
+2018-08-24 01:00:59,798 INFO  Service   [Maintenance Task 8/24/18 01:00] - CascadeDeleteRecommendationsTrans - Done Removing Recommendations: 0
+2018-08-24 01:00:59,798 INFO  Service   [Maintenance Task 8/24/18 01:00] - BizLogicMgrHelper.RemoveMarkedForDeletionRecommendations - Done deleting 0 records
+2018-08-24 01:00:59,868 INFO  Service   [Maintenance Task 8/24/18 01:00] - CascadeDeleteRecommendationsTrans - Done Removing Recommendations: 140
+2018-08-24 01:00:59,868 INFO  Service   [Maintenance Task 8/24/18 01:00] - BizLogicMgrHelper.RemoveUnusedRecommendations - Done deleting 140 records
+2018-08-24 01:00:59,908 INFO  Service   [Maintenance Task 8/24/18 01:00] -  - Done Removing marked for deletion device changes
+2018-08-24 01:00:59,908 INFO  Service   [Maintenance Task 8/24/18 01:00] - CascadeDeleteDevicesTrans - Done Removing Devices: 0
+2018-08-24 01:00:59,908 INFO  Service   [Maintenance Task 8/24/18 01:00] - BizLogicMgrHelper.RemoveMarkedForDeletionDevices - Done deleting 0 records
+2018-08-24 01:00:59,918 INFO  Service   [Maintenance Task 8/24/18 01:00] - MaintenanceTask.DoWork - Maintenance Task Ending
+2018-08-24 08:07:57,355 INFO  Service   [License Task 8/24/18 08:07] - LicenseWrapper.Connect using IPs : 10.80.127.153 : 10.80.127.153 device features:  :  devices version:  :  host addr: net.tcp://10.80.127.153:8888/LicensingService ok to LogErrors: True
+2018-08-24 08:07:57,385 INFO  Service   [License Task 8/24/18 08:07] - LicenseWrapper.Connect ping test: True
+2018-08-24 08:07:57,405 INFO  Service   [License Task 8/24/18 08:07] - LicenseWrapper.Connect succeeded
+2018-08-24 08:07:57,425 INFO  Service   [License Task 8/24/18 08:07] - About to call the method GetSeatInfoForFeature
+2018-08-24 08:07:57,435 INFO  Service   [License Task 8/24/18 08:07] - License feature count = 4
+2018-08-24 08:07:57,435 INFO  Service   [License Task 8/24/18 08:07] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_LIMITED_POLICY  session: 69319b3b61474149be4f54b150bdacce
+2018-08-24 08:07:57,455 ERROR Service   [License Task 8/24/18 08:07] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-24 08:07:57,455 WARN  Service   [License Task 8/24/18 08:07] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_LIMITED_POLICY  Error: -106
+2018-08-24 08:07:57,455 INFO  Service   [License Task 8/24/18 08:07] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEVICES session: 69319b3b61474149be4f54b150bdacce
+2018-08-24 08:07:57,455 ERROR Service   [License Task 8/24/18 08:07] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-24 08:07:57,465 WARN  Service   [License Task 8/24/18 08:07] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEVICES Error: -106
+2018-08-24 08:07:57,465 INFO  Service   [License Task 8/24/18 08:07] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEMO session: 69319b3b61474149be4f54b150bdacce
+2018-08-24 08:08:36,266 INFO  Service   [820] - TaskSupervisor - starting shutdown
+2018-08-24 08:08:39,273 INFO  Service   [820] - TaskSupervisor - shutdown returning 
+2018-08-28 11:15:02,343 INFO  Service   [4] - TaskSupervisor.Init - HPSM Starting
+2018-08-28 11:15:09,406 INFO  Service   [4] - TaskSupervisor - starting shutdown
+2018-08-28 11:15:10,409 DEBUG Service   [4] - TaskSupervisor - ShutdownAll completed in 0 seconds
+2018-08-28 11:15:10,410 INFO  Service   [4] - TaskSupervisor - shutdown returning 
+2018-08-28 11:15:14,523 INFO  Service   [4] - TaskSupervisor.Init - HPSM Starting
+2018-08-28 11:15:24,638 DEBUG Service   [4] - Setup DSSessionVariables() - hibernate session
+2018-08-28 11:15:26,323 INFO  Service   [4] - Successfully started DSSessionVariables() - hibernate session
+2018-08-28 11:15:26,327 INFO  Service   [4] - ScheduleTaskManager.RetryDBConnection Testing DB connection to: Server=(local)\SQLEXPRESS_2014;initial catalog=HPIPSC;Integrated Security=SSPI
+2018-08-28 11:15:26,328 DEBUG Service   [4] - ScheduleTaskManager.RetryDBConnection Testing DB connection
+2018-08-28 11:15:26,328 DEBUG Service   [4] -  - TestDBConnection 
+2018-08-28 11:15:26,332 INFO  Service   [4] -  - Done TestDBConnection 
+2018-08-28 11:15:26,332 INFO  Service   [4] - ScheduleTaskManager.RetryDBConnection Testing DB connection successfull to: Server=(local)\SQLEXPRESS_2014;initial catalog=HPIPSC;Integrated Security=SSPI
+2018-08-28 11:15:26,332 DEBUG Service   [4] - ScheduleTaskManager.DispatchEvents Initializing
+2018-08-28 11:15:26,336 INFO  Service   [4] - Service Starting up - Init() 
+2018-08-28 11:15:26,340 DEBUG Service   [4] - BizLogicMgr - GetMetaData
+2018-08-28 11:15:26,487 INFO  Service   [4] - BizLogicMgr.IsValidProductDB - productId 3E90D780-8D8F-40F2-BA4F-DCCAE7A9E0EB metaData.ID3E90D780-8D8F-40F2-BA4F-DCCAE7A9E0EB
+2018-08-28 11:15:27,120 INFO  Service   [4] - Service Version:  3.2.1.8512
+2018-08-28 11:15:27,136 INFO  Service   [4] - Shrinking the DB log file
+2018-08-28 11:15:27,137 INFO  Service   [4] -  - Shrinking DB 
+2018-08-28 11:15:27,280 INFO  Service   [4] -  - Done Shrinking DB 
+2018-08-28 11:15:27,281 INFO  Service   [4] - Service Starting up - Successfully shrink DB logs 
+2018-08-28 11:15:27,642 DEBUG Service   [4] - ScheduledTaskMgr - InitDBTaskInfo done
+2018-08-28 11:15:27,644 DEBUG Service   [4] - Initializing scheduled tasks - InitScheduledTaskRemoveLastRunStatusInfo()
+2018-08-28 11:15:27,801 DEBUG Service   [4] - Initializing LSGroups - GetLSGroupsFromDB()
+2018-08-28 11:15:27,823 DEBUG Service   [4] - Initializing LSGroups - GetLSGroupsFromDB()
+2018-08-28 11:15:27,838 DEBUG Service   [4] - Initializing Keys configuration
+2018-08-28 11:15:27,841 DEBUG Service   [4] - Method : BizLogicMgr.GetKeysConfigPrivate. Enter
+2018-08-28 11:15:27,844 INFO  Service   [4] - Current Version - 7
+2018-08-28 11:15:27,857 DEBUG Service   [4] - GetKeysConfigPrivate - Schema version >=5.
+2018-08-28 11:15:27,862 DEBUG Service   [4] - DecryptUsingDPAPI method called.
+2018-08-28 11:15:27,863 DEBUG Service   [4] - Error - DecryptUsingDPAPI: CryptographicException :DataKeys - PassPhraseThe parameter is incorrect.__
+2018-08-28 11:15:27,863 DEBUG Service   [4] - DecryptUsingDPAPI method called.
+2018-08-28 11:15:27,864 DEBUG Service   [4] - Error - DecryptUsingDPAPI: CryptographicException :DataKeys - SaltValueThe parameter is incorrect.__
+2018-08-28 11:15:27,864 DEBUG Service   [4] - Service Starting up - Successfully created data keys
+2018-08-28 11:15:27,884 DEBUG Service   [4] - Initializing Server Configuration
+2018-08-28 11:15:27,885 DEBUG Service   [4] - BizLogicMgr - GetServerConfigPrivate
+2018-08-28 11:15:27,887 DEBUG Service   [4] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:27,890 DEBUG Service   [4] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:27,897 DEBUG Service   [4] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:15:27,911 DEBUG Service   [4] - Server Configuration:  :Remediation Mode:  License Information:   # License available:  18  # License assigned:  2  # Days to Expires:  50  Last time connect to License Server:  8/27/18 01:15  Connection :  8/27/18 01:15 :UI Is Locksmith Server:  : Generate PASSed recommendations:  :Do NOT use direct listner: Do NOT Auto Assessment On Announcement:   :Server name=  80W7-SSI1 address= 10.80.127.153 state:Active  : Discovery authentication mode=  NoAuthentication  Do NOT Serial Number Authentication:   :Children #:  0
+2018-08-28 11:15:27,911 INFO  Service   [4] - Server Configuration:  :Remediation Mode:  License Information:   # License available:  18  # License assigned:  2  # Days to Expires:  50  Last time connect to License Server:  8/27/18 01:15  Connection :  8/27/18 01:15 :UI Is Locksmith Server:  : Generate PASSed recommendations:  :Do NOT use direct listner: Do NOT Auto Assessment On Announcement:   :Server name=  80W7-SSI1 address= 10.80.127.153 state:Active  : Discovery authentication mode=  NoAuthentication  Do NOT Serial Number Authentication:   :Children #:  0
+2018-08-28 11:15:27,912 DEBUG Service   [4] - BizLogicMgr.GetSerialNumberFilter
+2018-08-28 11:15:27,919 DEBUG Service   [4] - BizLogicMgr - HasDuplicateUserRoleNames: Administrator max cnt:0
+2018-08-28 11:15:27,927 DEBUG Service   [4] - BizLogicMgr - HasDuplicateUserRoleNames: Guest max cnt:0
+2018-08-28 11:15:27,929 INFO  Service   [4] - Service  & ServerConfig Started successfully
+2018-08-28 11:15:27,929 DEBUG Service   [4] - ScheduleTaskManager.DispatchEvents Starting up remaining Tasks
+2018-08-28 11:15:27,931 DEBUG Service   [4] - TaskSupervisor - InitRemainingTasks - start SSL Listner: False
+2018-08-28 11:15:27,938 DEBUG Service   [4] - TaskSupervisor - StartAll - Starting Task Managers.
+2018-08-28 11:15:27,940 DEBUG Service   [12] - ScheduledTaskMgr - DoWork - Started.
+2018-08-28 11:15:27,942 INFO  Service   [13] - MaintenanceTaskManager - Started.
+2018-08-28 11:15:27,943 DEBUG Service   [14] - ThreadPoolMgr - DoWork Started.
+2018-08-28 11:15:27,942 DEBUG Service   [4] - TaskSupervisor - InitRemainingTasks - started 
+2018-08-28 11:15:27,944 INFO  Service   [16] - AutoGroupsTaskManager - Started.
+2018-08-28 11:15:27,944 INFO  Service   [15] - LicenseTaskManager - Started.
+2018-08-28 11:15:27,945 DEBUG Service   [13] - MaintenanceTaskManager -Next time: 8/29/18 01:01
+2018-08-28 11:15:27,944 DEBUG Service   [4] - ScheduleTaskManager.DispatchEvents Starting up remaining Tasks - Successfull
+2018-08-28 11:15:27,946 DEBUG Service   [16] - AutoGroupsTaskManager -Next time: 9/21/18 11:15
+2018-08-28 11:15:27,947 DEBUG Service   [15] - LicenseTaskManager.SetNextEventTime -Next run time: 8/28/18 11:15
+2018-08-28 11:15:32,947 DEBUG Service   [4] - ScheduleTaskMgr.DispatchEvent - Processing waiting tasks - DB, Licensing, etc. setup correctly
+2018-08-28 11:15:32,951 DEBUG Service   [5] - LicenseTaskManager -DispatchEvents- doing work
+2018-08-28 11:15:32,952 DEBUG Service   [5] -   Doing License  Maintenance
+2018-08-28 11:15:32,953 DEBUG Service   [5] - LicenseTaskManager.SetNextEventTime -Next run time: 8/28/18 11:15
+2018-08-28 11:15:32,958 DEBUG Service   [License Task 8/28/18 11:15] - License Heartbeat Task Starting
+2018-08-28 11:15:32,963 DEBUG Service   [License Task 8/28/18 11:15] - LicenseTaskManager - Registering License Task 8/28/18 11:15  ThreadID:8 b766fe55-6c9d-4a8c-b486-75ec78b02489
+2018-08-28 11:15:32,971 DEBUG Service   [4] - EAPTaskManager - ProcessTask: Automatic.uxv.0
+2018-08-28 11:15:32,971 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:32,976 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:15:32,976 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:32,980 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:32,985 DEBUG Service   [License Task 8/28/18 11:15] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:15:32,985 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:32,988 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:15:32,989 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:32,992 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.Instance - *** first time licenseMgr call or changed IP - okToLogError: True
+2018-08-28 11:15:32,993 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.Init
+2018-08-28 11:15:32,994 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:32,997 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:15:32,997 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:33,008 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Instance - *** first time LicenseWrapper call
+2018-08-28 11:15:33,011 DEBUG Service   [4] -  - AddingTask - Automatic.uxv.0 id: d3606527-53f0-4089-8baf-a94a00a9637b
+2018-08-28 11:15:33,011 DEBUG Service   [4] -  # Tasks waiting in queue: - 0
+2018-08-28 11:15:33,013 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Init - limited feature: IPSC_LIMITED_POLICY  version: 3.0
+2018-08-28 11:15:33,013 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Init - devices feature: IPSC_DEVICES version: 2.0
+2018-08-28 11:15:33,013 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Init - demo feature: IPSC_DEMO version: 2.0
+2018-08-28 11:15:33,014 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.DetermineURL : net.tcp://10.80.127.153:8888/LicensingService
+2018-08-28 11:15:33,017 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.SetupWCFConnection
+2018-08-28 11:15:33,021 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.Connect using IPs : 10.80.127.153 : 10.80.127.153 device features:  :  devices version:  :  host addr: net.tcp://10.80.127.153:8888/LicensingService ok to LogErrors: True
+2018-08-28 11:15:33,113 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.Connect ping test: True
+2018-08-28 11:15:33,114 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitPrivate - ok to LogErrors: True
+2018-08-28 11:15:33,116 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitSession - create new session - ok to LogErrors: True
+2018-08-28 11:15:33,145 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateApplicationIdentity - success: Connected successfully to the Licensing Server
+2018-08-28 11:15:33,145 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitSession succeeded using new session: 4c1f80f5b1e741a29599dfe3de37b3e3
+2018-08-28 11:15:33,145 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitPrivate succeeded 
+2018-08-28 11:15:33,146 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.Connect succeeded
+2018-08-28 11:15:33,163 INFO  Service   [License Task 8/28/18 11:15] - About to call the method GetSeatInfoForFeature
+2018-08-28 11:15:33,163 INFO  Service   [License Task 8/28/18 11:15] - License feature count = 4
+2018-08-28 11:15:33,168 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_LIMITED_POLICY  session: 4c1f80f5b1e741a29599dfe3de37b3e3
+2018-08-28 11:15:33,189 ERROR Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-28 11:15:33,190 WARN  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_LIMITED_POLICY  Error: -106
+2018-08-28 11:15:33,190 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEVICES session: 4c1f80f5b1e741a29599dfe3de37b3e3
+2018-08-28 11:15:33,194 ERROR Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-28 11:15:33,195 WARN  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEVICES Error: -106
+2018-08-28 11:15:33,195 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEMO session: 4c1f80f5b1e741a29599dfe3de37b3e3
+2018-08-28 11:15:33,199 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - success: Get seats information for feature: IPSC_DEMO
+2018-08-28 11:15:33,200 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature returned for feature: IPSC_DEMO  total seats: 20 inUse: 0
+2018-08-28 11:15:33,200 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature succeeded for feature: IPSC_DEMO total seats: 20 available: 20 seatsInUse: 0
+2018-08-28 11:15:33,202 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetExpiredInformation for feature: IPSC_DEMO
+2018-08-28 11:15:33,236 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - success: GetExpiredInformation for feature: IPSC_DEMO
+2018-08-28 11:15:33,236 DEBUG Service   [License Task 8/28/18 11:15] - Feature 'IPSC_DEMO' will expire in : 49 days.
+2018-08-28 11:15:33,237 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Init - succeeded
+2018-08-28 11:15:33,239 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect
+2018-08-28 11:15:33,256 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect - CloseSession succeeded
+2018-08-28 11:15:33,257 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect - closing the factory
+2018-08-28 11:15:33,275 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect - done 
+2018-08-28 11:15:33,277 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.CheckOut
+2018-08-28 11:15:33,290 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.CheckOut #: 0
+2018-08-28 11:15:33,294 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgrHelper -  GetDataSetCount returned: 2
+2018-08-28 11:15:33,296 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.CheckOut for feature: IPSC_DEMO total # required: 2
+2018-08-28 11:15:33,297 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.UpdateCountAndStatus
+2018-08-28 11:15:33,298 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:33,307 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetLicenseStatus
+2018-08-28 11:15:33,309 DEBUG Service   [License Task 8/28/18 11:15] - License data:   -Feature: IPSC_DEMO -Expires in: 49 -# Assigned: 2 -# Available: 18 -# Total: 20 -Session:  -Client security token:  -Server security token:  -Connection status ok: True -When: IPSC_DEMO -Feature: IPSC_DEMO -Feature: 8/28/18 11:15
+2018-08-28 11:15:33,310 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig
+2018-08-28 11:15:33,311 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:33,321 DEBUG Service   [License Task 8/28/18 11:15] - Server Configuration:  :Remediation Mode:  License Information:   # License available:  18  # License assigned:  2  # Days to Expires:  49  Last time connect to License Server:  8/28/18 11:15  Connection :  8/28/18 11:15 :UI Is Locksmith Server:  : Generate PASSed recommendations:  :Do NOT use direct listner: Do NOT Auto Assessment On Announcement:   :Server name=  80W7-SSI1 address= 10.80.127.153 state:Active  : Discovery authentication mode=  NoAuthentication  Do NOT Serial Number Authentication:   :Children #:  0
+2018-08-28 11:15:33,322 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig returning: 
+2018-08-28 11:15:33,322 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.UpdateCountAndStatus
+2018-08-28 11:15:33,323 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:33,325 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetLicenseStatus
+2018-08-28 11:15:33,326 DEBUG Service   [License Task 8/28/18 11:15] - License data:   -Feature: IPSC_DEMO -Expires in: 49 -# Assigned: 2 -# Available: 18 -# Total: 20 -Session:  -Client security token:  -Server security token:  -Connection status ok: True -When: IPSC_DEMO -Feature: IPSC_DEMO -Feature: 8/28/18 11:15
+2018-08-28 11:15:33,326 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig
+2018-08-28 11:15:33,327 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:33,333 DEBUG Service   [License Task 8/28/18 11:15] - Server Configuration:  :Remediation Mode:  License Information:   # License available:  18  # License assigned:  2  # Days to Expires:  49  Last time connect to License Server:  8/28/18 11:15  Connection :  8/28/18 11:15 :UI Is Locksmith Server:  : Generate PASSed recommendations:  :Do NOT use direct listner: Do NOT Auto Assessment On Announcement:   :Server name=  80W7-SSI1 address= 10.80.127.153 state:Active  : Discovery authentication mode=  NoAuthentication  Do NOT Serial Number Authentication:   :Children #:  0
+2018-08-28 11:15:33,334 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig returning: 
+2018-08-28 11:15:33,334 INFO  Service   [License Task 8/28/18 11:15] - LicenseMgr.Instance - Licensing Initialized successfully
+2018-08-28 11:15:33,336 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.Heartbeat
+2018-08-28 11:15:33,337 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.AddLicense: ok to LogErrors: True
+2018-08-28 11:15:33,338 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Heartbeat  calling DetermineFeatureSupportedAndSeatInfo 
+2018-08-28 11:15:33,338 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.SetupWCFConnection
+2018-08-28 11:15:33,340 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.Connect using IPs : 10.80.127.153 : 10.80.127.153 device features:  :  devices version:  :  host addr: net.tcp://10.80.127.153:8888/LicensingService ok to LogErrors: True
+2018-08-28 11:15:33,363 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.Connect ping test: True
+2018-08-28 11:15:33,363 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitPrivate - ok to LogErrors: True
+2018-08-28 11:15:33,363 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitSession - create new session - ok to LogErrors: True
+2018-08-28 11:15:33,382 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateApplicationIdentity - success: Connected successfully to the Licensing Server
+2018-08-28 11:15:33,382 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitSession succeeded using new session: c8ca6f82189846ec8ba1784f7d7a73c9
+2018-08-28 11:15:33,383 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitPrivate succeeded 
+2018-08-28 11:15:33,383 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.Connect succeeded
+2018-08-28 11:15:33,399 INFO  Service   [License Task 8/28/18 11:15] - About to call the method GetSeatInfoForFeature
+2018-08-28 11:15:33,400 INFO  Service   [License Task 8/28/18 11:15] - License feature count = 4
+2018-08-28 11:15:33,400 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_LIMITED_POLICY  session: c8ca6f82189846ec8ba1784f7d7a73c9
+2018-08-28 11:15:33,417 ERROR Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-28 11:15:33,418 WARN  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_LIMITED_POLICY  Error: -106
+2018-08-28 11:15:33,418 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEVICES session: c8ca6f82189846ec8ba1784f7d7a73c9
+2018-08-28 11:15:33,422 ERROR Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-28 11:15:33,422 WARN  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEVICES Error: -106
+2018-08-28 11:15:33,423 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEMO session: c8ca6f82189846ec8ba1784f7d7a73c9
+2018-08-28 11:15:33,427 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - success: Get seats information for feature: IPSC_DEMO
+2018-08-28 11:15:33,427 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature returned for feature: IPSC_DEMO  total seats: 20 inUse: 0
+2018-08-28 11:15:33,428 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature succeeded for feature: IPSC_DEMO total seats: 20 available: 20 seatsInUse: 0
+2018-08-28 11:15:33,428 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetExpiredInformation for feature: IPSC_DEMO
+2018-08-28 11:15:33,446 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - success: GetExpiredInformation for feature: IPSC_DEMO
+2018-08-28 11:15:33,446 DEBUG Service   [License Task 8/28/18 11:15] - Feature 'IPSC_DEMO' will expire in : 49 days.
+2018-08-28 11:15:33,447 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Heartbeat - succeeded
+2018-08-28 11:15:33,447 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect
+2018-08-28 11:15:33,471 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect - CloseSession succeeded
+2018-08-28 11:15:33,471 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect - closing the factory
+2018-08-28 11:15:33,489 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect - done 
+2018-08-28 11:15:33,490 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.CheckOut
+2018-08-28 11:15:33,490 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.CheckOut #: 0
+2018-08-28 11:15:33,492 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgrHelper -  GetDataSetCount returned: 2
+2018-08-28 11:15:33,492 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.CheckOut for feature: IPSC_DEMO total # required: 2
+2018-08-28 11:15:33,493 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.UpdateCountAndStatus
+2018-08-28 11:15:33,493 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:33,496 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetLicenseStatus
+2018-08-28 11:15:33,497 DEBUG Service   [License Task 8/28/18 11:15] - License data:   -Feature: IPSC_DEMO -Expires in: 49 -# Assigned: 2 -# Available: 18 -# Total: 20 -Session:  -Client security token:  -Server security token:  -Connection status ok: True -When: IPSC_DEMO -Feature: IPSC_DEMO -Feature: 8/28/18 11:15
+2018-08-28 11:15:33,497 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig
+2018-08-28 11:15:33,497 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:33,504 DEBUG Service   [License Task 8/28/18 11:15] - Server Configuration:  :Remediation Mode:  License Information:   # License available:  18  # License assigned:  2  # Days to Expires:  49  Last time connect to License Server:  8/28/18 11:15  Connection :  8/28/18 11:15 :UI Is Locksmith Server:  : Generate PASSed recommendations:  :Do NOT use direct listner: Do NOT Auto Assessment On Announcement:   :Server name=  80W7-SSI1 address= 10.80.127.153 state:Active  : Discovery authentication mode=  NoAuthentication  Do NOT Serial Number Authentication:   :Children #:  0
+2018-08-28 11:15:33,504 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig returning: 
+2018-08-28 11:15:33,504 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.UpdateCountAndStatus
+2018-08-28 11:15:33,505 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:33,508 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetLicenseStatus
+2018-08-28 11:15:33,508 DEBUG Service   [License Task 8/28/18 11:15] - License data:   -Feature: IPSC_DEMO -Expires in: 49 -# Assigned: 2 -# Available: 18 -# Total: 20 -Session:  -Client security token:  -Server security token:  -Connection status ok: True -When: IPSC_DEMO -Feature: IPSC_DEMO -Feature: 8/28/18 11:15
+2018-08-28 11:15:33,508 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig
+2018-08-28 11:15:33,509 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:33,515 DEBUG Service   [License Task 8/28/18 11:15] - Server Configuration:  :Remediation Mode:  License Information:   # License available:  18  # License assigned:  2  # Days to Expires:  49  Last time connect to License Server:  8/28/18 11:15  Connection :  8/28/18 11:15 :UI Is Locksmith Server:  : Generate PASSed recommendations:  :Do NOT use direct listner: Do NOT Auto Assessment On Announcement:   :Server name=  80W7-SSI1 address= 10.80.127.153 state:Active  : Discovery authentication mode=  NoAuthentication  Do NOT Serial Number Authentication:   :Children #:  0
+2018-08-28 11:15:33,515 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig returning: 
+2018-08-28 11:15:33,516 DEBUG Service   [License Task 8/28/18 11:15] - License Heartbeat Task Ending
+2018-08-28 11:15:33,517 DEBUG Service   [License Task 8/28/18 11:15] - UnRegistering LicenseTaskManager : License Task 8/28/18 11:15 b766fe55-6c9d-4a8c-b486-75ec78b02489
+2018-08-28 11:15:37,946 DEBUG Service   [14] -  - RemovingTask from queue - Automatic.uxv.0 id: d3606527-53f0-4089-8baf-a94a00a9637b
+2018-08-28 11:15:37,946 DEBUG Service   [14] -  # Tasks waiting in queue: - 0
+2018-08-28 11:15:37,947 DEBUG Service   [14] -  Starting task: Automatic.uxv.0
+2018-08-28 11:15:37,953 DEBUG Service   [4] - LicenseTaskManager -DispatchEvents- doing work
+2018-08-28 11:15:37,953 DEBUG Service   [4] -   Doing License  Maintenance
+2018-08-28 11:15:37,954 DEBUG Service   [4] - LicenseTaskManager.SetNextEventTime -Next run time: 8/29/18 11:14
+2018-08-28 11:15:37,954 DEBUG Service   [License Task 8/28/18 11:15] - License Heartbeat Task Starting
+2018-08-28 11:15:37,955 DEBUG Service   [License Task 8/28/18 11:15] - LicenseTaskManager - Registering License Task 8/28/18 11:15  ThreadID:19 a72789fa-a1c1-4235-ae90-18054c40f9cc
+2018-08-28 11:15:37,956 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:37,960 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:15:37,961 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:37,965 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:37,971 DEBUG Service   [License Task 8/28/18 11:15] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:15:37,972 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:37,976 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:15:37,976 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:37,979 DEBUG Service   [5] - DiscoveryTask - ExecuteTask Started:  Automatic.uxv.0 job: Discovery processing step: expanded for task dbID: d3606527-53f0-4089-8baf-a94a00a9637b
+2018-08-28 11:15:37,980 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.Heartbeat
+2018-08-28 11:15:37,981 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.AddLicense: ok to LogErrors: True
+2018-08-28 11:15:37,981 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Heartbeat  calling DetermineFeatureSupportedAndSeatInfo 
+2018-08-28 11:15:37,981 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.SetupWCFConnection
+2018-08-28 11:15:37,987 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.Connect using IPs : 10.80.127.153 : 10.80.127.153 device features:  :  devices version:  :  host addr: net.tcp://10.80.127.153:8888/LicensingService ok to LogErrors: True
+2018-08-28 11:15:38,009 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.Connect ping test: True
+2018-08-28 11:15:38,009 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitPrivate - ok to LogErrors: True
+2018-08-28 11:15:38,010 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitSession - create new session - ok to LogErrors: True
+2018-08-28 11:15:38,016 DEBUG Service   [5] - Task.OptimizeNumberOfTasksAndSetupCheckPointRestart - already expanded returning - Automatic.uxv.0  type: Worker  ProcessingStep: expanded
+2018-08-28 11:15:38,016 DEBUG Service   [5] -  worker task: Automatic.uxv.0  remaining # devices to process: 0
+2018-08-28 11:15:38,019 DEBUG Service   [5] - Task: Automatic.uxv.0  workerTaskState:  parentID: 4e94a83c-0b4d-4b20-97ee-a94a00a95c29 A#: 0 R#: 0 D#: 0 total devices: 0
+2018-08-28 11:15:38,020 DEBUG Service   [5] - Task.RegisterTask: Automatic.uxv.0
+2018-08-28 11:15:38,024 DEBUG Service   [5] - ScheduleTaskManager - Registereing task: Automatic.uxv.0 type:Worker 5 d3606527-53f0-4089-8baf-a94a00a9637b
+2018-08-28 11:15:38,029 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateApplicationIdentity - success: Connected successfully to the Licensing Server
+2018-08-28 11:15:38,030 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitSession succeeded using new session: 886339487b0a4ac5b329df472cf06646
+2018-08-28 11:15:38,030 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.InitPrivate succeeded 
+2018-08-28 11:15:38,031 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.Connect succeeded
+2018-08-28 11:15:38,034 DEBUG Service   [5] - ScheduleTaskManager.UpdateTaskTracking   parentID: 4e94a83c-0b4d-4b20-97ee-a94a00a95c29 A#: 0 R#: 0 D#: 0 total devices: 0 substractCounters: False
+2018-08-28 11:15:38,034 DEBUG Service   [5] - ScheduleTaskManager.UpdateTaskTracking  - parent not found 
+2018-08-28 11:15:38,036 DEBUG Service   [5] - ScheduleTaskManager.UpdateParentsToRunningTasksRelationshipAndCounters  with:  parentID: 4e94a83c-0b4d-4b20-97ee-a94a00a95c29 A#: 0 R#: 0 D#: 0 total devices: 0 substractCounters: False final task status: None propagateStatusMsgToParent: False
+2018-08-28 11:15:38,038 DEBUG Service   [5] -  Adding Parent's task via worker:   ParentTask - dbID: 4e94a83c-0b4d-4b20-97ee-a94a00a95c29 A#: 0 R#: 0 D#: 0 taskStatus: None
+2018-08-28 11:15:38,054 DEBUG Service   [5] - ScheduleTaskManager - Successfully Registered task: Automatic.uxv.0 type:Worker 5 d3606527-53f0-4089-8baf-a94a00a9637b
+2018-08-28 11:15:38,054 DEBUG Service   [5] - --Number of running tasks after Register: 0
+2018-08-28 11:15:38,055 DEBUG Service   [5] - Task.RegisterTask Done: Automatic.uxv.0
+2018-08-28 11:15:38,056 DEBUG Service   [5] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:38,056 INFO  Service   [License Task 8/28/18 11:15] - About to call the method GetSeatInfoForFeature
+2018-08-28 11:15:38,057 INFO  Service   [License Task 8/28/18 11:15] - License feature count = 4
+2018-08-28 11:15:38,058 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_LIMITED_POLICY  session: 886339487b0a4ac5b329df472cf06646
+2018-08-28 11:15:38,078 ERROR Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-28 11:15:38,079 WARN  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_LIMITED_POLICY  Error: -106
+2018-08-28 11:15:38,079 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEVICES session: 886339487b0a4ac5b329df472cf06646
+2018-08-28 11:15:38,084 ERROR Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - ERROR code: -106
+2018-08-28 11:15:38,084 WARN  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature ValidateResponse for feature: IPSC_DEVICES Error: -106
+2018-08-28 11:15:38,084 INFO  Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature Getting License counts for feature: IPSC_DEMO session: 886339487b0a4ac5b329df472cf06646
+2018-08-28 11:15:38,088 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - success: Get seats information for feature: IPSC_DEMO
+2018-08-28 11:15:38,090 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature returned for feature: IPSC_DEMO  total seats: 20 inUse: 0
+2018-08-28 11:15:38,090 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetSeatInfoForFeature succeeded for feature: IPSC_DEMO total seats: 20 available: 20 seatsInUse: 0
+2018-08-28 11:15:38,091 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetExpiredInformation for feature: IPSC_DEMO
+2018-08-28 11:15:38,109 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.ValidateResponseAndGetDetailErrorMsg - success: GetExpiredInformation for feature: IPSC_DEMO
+2018-08-28 11:15:38,110 DEBUG Service   [License Task 8/28/18 11:15] - Feature 'IPSC_DEMO' will expire in : 49 days.
+2018-08-28 11:15:38,110 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Heartbeat - succeeded
+2018-08-28 11:15:38,111 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect
+2018-08-28 11:15:38,127 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect - CloseSession succeeded
+2018-08-28 11:15:38,128 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect - closing the factory
+2018-08-28 11:15:38,154 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.Disconnect - done 
+2018-08-28 11:15:38,155 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.CheckOut
+2018-08-28 11:15:38,156 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.CheckOut #: 0
+2018-08-28 11:15:38,158 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgrHelper -  GetDataSetCount returned: 2
+2018-08-28 11:15:38,159 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.CheckOut for feature: IPSC_DEMO total # required: 2
+2018-08-28 11:15:38,159 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.UpdateCountAndStatus
+2018-08-28 11:15:38,160 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:38,163 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetLicenseStatus
+2018-08-28 11:15:38,164 DEBUG Service   [License Task 8/28/18 11:15] - License data:   -Feature: IPSC_DEMO -Expires in: 49 -# Assigned: 2 -# Available: 18 -# Total: 20 -Session:  -Client security token:  -Server security token:  -Connection status ok: True -When: IPSC_DEMO -Feature: IPSC_DEMO -Feature: 8/28/18 11:15
+2018-08-28 11:15:38,165 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig
+2018-08-28 11:15:38,165 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:38,171 DEBUG Service   [License Task 8/28/18 11:15] - Server Configuration:  :Remediation Mode:  License Information:   # License available:  18  # License assigned:  2  # Days to Expires:  49  Last time connect to License Server:  8/28/18 11:15  Connection :  8/28/18 11:15 :UI Is Locksmith Server:  : Generate PASSed recommendations:  :Do NOT use direct listner: Do NOT Auto Assessment On Announcement:   :Server name=  80W7-SSI1 address= 10.80.127.153 state:Active  : Discovery authentication mode=  NoAuthentication  Do NOT Serial Number Authentication:   :Children #:  0
+2018-08-28 11:15:38,172 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig returning: 
+2018-08-28 11:15:38,173 DEBUG Service   [License Task 8/28/18 11:15] - LicenseMgr.UpdateCountAndStatus
+2018-08-28 11:15:38,173 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:38,176 DEBUG Service   [License Task 8/28/18 11:15] - LicenseWrapper.GetLicenseStatus
+2018-08-28 11:15:38,177 DEBUG Service   [License Task 8/28/18 11:15] - License data:   -Feature: IPSC_DEMO -Expires in: 49 -# Assigned: 2 -# Available: 18 -# Total: 20 -Session:  -Client security token:  -Server security token:  -Connection status ok: True -When: IPSC_DEMO -Feature: IPSC_DEMO -Feature: 8/28/18 11:15
+2018-08-28 11:15:38,178 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig
+2018-08-28 11:15:38,178 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr - GetServerConfig
+2018-08-28 11:15:38,182 DEBUG Service   [5] - DiscoveryTask - ExecuteTask Ended:  Automatic.uxv.0 job: Discovery for task: d3606527-53f0-4089-8baf-a94a00a9637b
+2018-08-28 11:15:38,184 DEBUG Service   [License Task 8/28/18 11:15] - Server Configuration:  :Remediation Mode:  License Information:   # License available:  18  # License assigned:  2  # Days to Expires:  49  Last time connect to License Server:  8/28/18 11:15  Connection :  8/28/18 11:15 :UI Is Locksmith Server:  : Generate PASSed recommendations:  :Do NOT use direct listner: Do NOT Auto Assessment On Announcement:   :Server name=  80W7-SSI1 address= 10.80.127.153 state:Active  : Discovery authentication mode=  NoAuthentication  Do NOT Serial Number Authentication:   :Children #:  0
+2018-08-28 11:15:38,185 DEBUG Service   [License Task 8/28/18 11:15] - BizLogicMgr -  SaveServerConfig returning: 
+2018-08-28 11:15:38,186 DEBUG Service   [License Task 8/28/18 11:15] - License Heartbeat Task Ending
+2018-08-28 11:15:38,187 DEBUG Service   [License Task 8/28/18 11:15] - UnRegistering LicenseTaskManager : License Task 8/28/18 11:15 a72789fa-a1c1-4235-ae90-18054c40f9cc
+2018-08-28 11:16:04,457 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - WCF - GetLicenseDetails
+2018-08-28 11:16:04,457 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - WCF - GetLicenseDetails
+2018-08-28 11:16:04,460 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - GetLicenseDetails
+2018-08-28 11:16:04,461 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - GetLicenseDetails
+2018-08-28 11:16:04,461 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,461 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,468 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,471 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:04,471 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,474 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,478 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:04,478 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,481 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:04,481 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,484 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,486 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:04,487 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,489 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,493 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:04,494 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,496 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:04,497 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,499 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,501 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:04,502 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,504 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,508 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:04,509 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,514 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:04,515 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [50] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,518 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,521 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:04,522 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,525 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,529 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:04,530 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:04,532 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:04,533 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,718 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - WCF - GetLicenseDetails
+2018-08-28 11:16:10,721 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - GetLicenseDetails
+2018-08-28 11:16:10,722 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,727 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,732 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:10,733 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,738 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,745 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:10,746 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,750 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:10,751 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,755 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,766 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:10,767 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,772 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,777 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:10,778 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:10,781 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:10,782 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,151 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - WCF - GetLicenseDetails
+2018-08-28 11:16:13,153 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - GetLicenseDetails
+2018-08-28 11:16:13,154 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,159 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,164 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:13,165 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,170 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,176 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:13,178 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,182 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:13,183 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,188 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,192 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:13,193 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,198 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,204 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:13,205 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:13,211 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:13,212 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,595 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - WCF - DeleteTasks
+2018-08-28 11:16:18,598 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - BizLogicMgr Delete Task id: 4e94a83c-0b4d-4b20-97ee-a94a00a95c29
+2018-08-28 11:16:18,600 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - TaskSupervisor - Deleting task 4e94a83c-0b4d-4b20-97ee-a94a00a95c29, for Task Manager 
+2018-08-28 11:16:18,606 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduleTaskManager.DeleteTask for id: 4e94a83c-0b4d-4b20-97ee-a94a00a95c29
+2018-08-28 11:16:18,621 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - TaskBase - SetNextRunTime name: Automatic type: Schedulable status: Running next run:12/31/99 11:59
+2018-08-28 11:16:18,628 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Automatic job: Discovery
+2018-08-28 11:16:18,636 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - CreateTaskSearchQuery: query: select  stt.ID as ID   from dbo.ScheduledTaskTable stt   where  (stt.State = 2) AND          (stt.Status in ( 1003, 1002, 1006, 1001, 1004, 1000, 1005) ) AND          (stt.ParentID=@parent)
+2018-08-28 11:16:18,638 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduleTaskManager -  DeleteTask # children to delete: 1
+2018-08-28 11:16:18,644 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - TaskBase - SetNextRunTime name: Automatic.uxv.0 type: Worker status: Running next run:12/31/99 11:59
+2018-08-28 11:16:18,650 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Automatic.uxv.0 job: Discovery
+2018-08-28 11:16:18,654 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduleTaskManager.UpdateDictOfRunningTasks:  4e94a83c-0b4d-4b20-97ee-a94a00a95c29
+2018-08-28 11:16:18,655 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - TaskBase - ProcessShutdown: set shut down msg to true: d3606527-53f0-4089-8baf-a94a00a9637b
+2018-08-28 11:16:18,658 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate:  4e94a83c-0b4d-4b20-97ee-a94a00a95c29
+2018-08-28 11:16:18,669 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduleTaskMgr.GetListOfChildernTasksNotDone - # tasks: 0
+2018-08-28 11:16:18,676 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduleTaskManager.GetTaskFromDB- Skip - task was deleted? 
+2018-08-28 11:16:18,676 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate removing parent info
+2018-08-28 11:16:18,682 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduleTaskManager.GetTaskFromDB- Skip - task was deleted? 
+2018-08-28 11:16:18,683 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate  Updating parent task - all childern are done processing
+2018-08-28 11:16:18,684 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [3] - WCF - DeleteTasks done.
+2018-08-28 11:16:18,726 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - WCF - GetLicenseDetails
+2018-08-28 11:16:18,727 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - GetLicenseDetails
+2018-08-28 11:16:18,728 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,732 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,738 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:18,739 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,742 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,747 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:18,748 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,751 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:18,752 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,755 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,758 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:18,759 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,762 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,767 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:18,768 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:18,771 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:18,772 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,483 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - WCF - DeleteTasks
+2018-08-28 11:16:26,485 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr Delete Task id: 455768a0-ff9f-41d8-b3a8-a94a009a3567
+2018-08-28 11:16:26,486 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskSupervisor - Deleting task 455768a0-ff9f-41d8-b3a8-a94a009a3567, for Task Manager 
+2018-08-28 11:16:26,487 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.DeleteTask for id: 455768a0-ff9f-41d8-b3a8-a94a009a3567
+2018-08-28 11:16:26,498 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: Verify - 1你ll Devices type: Schedulable status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,506 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Verify - 1你ll Devices job: Verify
+2018-08-28 11:16:26,507 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - CreateTaskSearchQuery: query: select  stt.ID as ID   from dbo.ScheduledTaskTable stt   where  (stt.State = 2) AND          (stt.Status in ( 1003, 1002, 1006, 1001, 1004, 1000, 1005) ) AND          (stt.ParentID=@parent)
+2018-08-28 11:16:26,509 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager -  DeleteTask # children to delete: 1
+2018-08-28 11:16:26,522 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: Verify - 1你ll Devices.ehp.0 type: Worker status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,529 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Verify - 1你ll Devices.ehp.0 job: Verify
+2018-08-28 11:16:26,530 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.UpdateDictOfRunningTasks:  455768a0-ff9f-41d8-b3a8-a94a009a3567
+2018-08-28 11:16:26,530 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate:  00000000-0000-0000-0000-000000000000
+2018-08-28 11:16:26,531 WARN  Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-28 11:16:26,532 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr Delete Task id: 036a2c67-cc2e-42ae-98a3-a94a009aaf67
+2018-08-28 11:16:26,533 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskSupervisor - Deleting task 036a2c67-cc2e-42ae-98a3-a94a009aaf67, for Task Manager 
+2018-08-28 11:16:26,534 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.DeleteTask for id: 036a2c67-cc2e-42ae-98a3-a94a009aaf67
+2018-08-28 11:16:26,541 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: snmp-read-only type: Schedulable status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,547 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: snmp-read-only job: AssessOnly
+2018-08-28 11:16:26,548 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - CreateTaskSearchQuery: query: select  stt.ID as ID   from dbo.ScheduledTaskTable stt   where  (stt.State = 2) AND          (stt.Status in ( 1003, 1002, 1006, 1001, 1004, 1000, 1005) ) AND          (stt.ParentID=@parent)
+2018-08-28 11:16:26,550 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager -  DeleteTask # children to delete: 1
+2018-08-28 11:16:26,557 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: snmp-read-only.lee.0 type: Worker status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,564 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: snmp-read-only.lee.0 job: AssessOnly
+2018-08-28 11:16:26,565 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.UpdateDictOfRunningTasks:  036a2c67-cc2e-42ae-98a3-a94a009aaf67
+2018-08-28 11:16:26,565 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate:  00000000-0000-0000-0000-000000000000
+2018-08-28 11:16:26,566 WARN  Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-28 11:16:26,567 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr Delete Task id: 010cc918-7385-4fe0-be7e-a94a009bbd88
+2018-08-28 11:16:26,568 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskSupervisor - Deleting task 010cc918-7385-4fe0-be7e-a94a009bbd88, for Task Manager 
+2018-08-28 11:16:26,569 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.DeleteTask for id: 010cc918-7385-4fe0-be7e-a94a009bbd88
+2018-08-28 11:16:26,576 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: Verify - 1你ll Devices type: Schedulable status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,582 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Verify - 1你ll Devices job: Verify
+2018-08-28 11:16:26,583 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - CreateTaskSearchQuery: query: select  stt.ID as ID   from dbo.ScheduledTaskTable stt   where  (stt.State = 2) AND          (stt.Status in ( 1003, 1002, 1006, 1001, 1004, 1000, 1005) ) AND          (stt.ParentID=@parent)
+2018-08-28 11:16:26,584 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager -  DeleteTask # children to delete: 3
+2018-08-28 11:16:26,592 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: Verify - 1你ll Devices.tmj.0 type: Worker status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,598 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Verify - 1你ll Devices.tmj.0 job: Verify
+2018-08-28 11:16:26,605 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: Verify Task 10.80.127.56Global type: Worker status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,612 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Verify Task 10.80.127.56Global job: Verify
+2018-08-28 11:16:26,619 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: Verify Task 10.80.127.56Default type: Worker status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,626 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Verify Task 10.80.127.56Default job: Verify
+2018-08-28 11:16:26,627 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.UpdateDictOfRunningTasks:  010cc918-7385-4fe0-be7e-a94a009bbd88
+2018-08-28 11:16:26,628 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate:  00000000-0000-0000-0000-000000000000
+2018-08-28 11:16:26,628 WARN  Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-28 11:16:26,629 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr Delete Task id: 2e9d2887-bb85-448e-a3b0-a94a009c4244
+2018-08-28 11:16:26,630 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskSupervisor - Deleting task 2e9d2887-bb85-448e-a3b0-a94a009c4244, for Task Manager 
+2018-08-28 11:16:26,631 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.DeleteTask for id: 2e9d2887-bb85-448e-a3b0-a94a009c4244
+2018-08-28 11:16:26,640 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: snmp-read-only-2 type: Schedulable status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,646 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: snmp-read-only-2 job: AssessOnly
+2018-08-28 11:16:26,647 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - CreateTaskSearchQuery: query: select  stt.ID as ID   from dbo.ScheduledTaskTable stt   where  (stt.State = 2) AND          (stt.Status in ( 1003, 1002, 1006, 1001, 1004, 1000, 1005) ) AND          (stt.ParentID=@parent)
+2018-08-28 11:16:26,648 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager -  DeleteTask # children to delete: 1
+2018-08-28 11:16:26,655 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: snmp-read-only-2.wqi.0 type: Worker status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,662 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: snmp-read-only-2.wqi.0 job: AssessOnly
+2018-08-28 11:16:26,663 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.UpdateDictOfRunningTasks:  2e9d2887-bb85-448e-a3b0-a94a009c4244
+2018-08-28 11:16:26,664 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate:  00000000-0000-0000-0000-000000000000
+2018-08-28 11:16:26,665 WARN  Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-28 11:16:26,666 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr Delete Task id: be9adf9e-ab9d-4fab-a41b-a94a00a5abdb
+2018-08-28 11:16:26,666 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskSupervisor - Deleting task be9adf9e-ab9d-4fab-a41b-a94a00a5abdb, for Task Manager 
+2018-08-28 11:16:26,667 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.DeleteTask for id: be9adf9e-ab9d-4fab-a41b-a94a00a5abdb
+2018-08-28 11:16:26,674 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: Verify - 1你ll Devices type: Schedulable status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,681 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Verify - 1你ll Devices job: Verify
+2018-08-28 11:16:26,681 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - CreateTaskSearchQuery: query: select  stt.ID as ID   from dbo.ScheduledTaskTable stt   where  (stt.State = 2) AND          (stt.Status in ( 1003, 1002, 1006, 1001, 1004, 1000, 1005) ) AND          (stt.ParentID=@parent)
+2018-08-28 11:16:26,683 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager -  DeleteTask # children to delete: 2
+2018-08-28 11:16:26,690 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: Verify - 1你ll Devices.xfs.0 type: Worker status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,696 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Verify - 1你ll Devices.xfs.0 job: Verify
+2018-08-28 11:16:26,703 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: Verify Task 10.80.127.56Global type: Worker status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,710 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: Verify Task 10.80.127.56Global job: Verify
+2018-08-28 11:16:26,711 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.UpdateDictOfRunningTasks:  be9adf9e-ab9d-4fab-a41b-a94a00a5abdb
+2018-08-28 11:16:26,712 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate:  00000000-0000-0000-0000-000000000000
+2018-08-28 11:16:26,712 WARN  Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-28 11:16:26,713 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - BizLogicMgr Delete Task id: 8b0aa1d7-f93d-4b56-84c9-a94a00a653f9
+2018-08-28 11:16:26,714 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskSupervisor - Deleting task 8b0aa1d7-f93d-4b56-84c9-a94a00a653f9, for Task Manager 
+2018-08-28 11:16:26,715 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.DeleteTask for id: 8b0aa1d7-f93d-4b56-84c9-a94a00a653f9
+2018-08-28 11:16:26,721 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: snmp read-only 3 type: Schedulable status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,728 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: snmp read-only 3 job: AssessOnly
+2018-08-28 11:16:26,728 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - CreateTaskSearchQuery: query: select  stt.ID as ID   from dbo.ScheduledTaskTable stt   where  (stt.State = 2) AND          (stt.Status in ( 1003, 1002, 1006, 1001, 1004, 1000, 1005) ) AND          (stt.ParentID=@parent)
+2018-08-28 11:16:26,730 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager -  DeleteTask # children to delete: 1
+2018-08-28 11:16:26,737 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - TaskBase - SetNextRunTime name: snmp read-only 3.mml.0 type: Worker status: Completed next run:12/31/99 11:59
+2018-08-28 11:16:26,743 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduledTaskMgr.DeleteTaskInDB - Successfully deleted task: snmp read-only 3.mml.0 job: AssessOnly
+2018-08-28 11:16:26,744 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.UpdateDictOfRunningTasks:  8b0aa1d7-f93d-4b56-84c9-a94a00a653f9
+2018-08-28 11:16:26,745 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate:  00000000-0000-0000-0000-000000000000
+2018-08-28 11:16:26,746 WARN  Service NT AUTHORITY\NETWORK SERVICE  [49] - ScheduleTaskManager.CheckParentStateAndRemoveIfAppropriate: Parent task id is empty - skipping
+2018-08-28 11:16:26,747 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [49] - WCF - DeleteTasks done.
+2018-08-28 11:16:26,788 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - WCF - GetLicenseDetails
+2018-08-28 11:16:26,790 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - GetLicenseDetails
+2018-08-28 11:16:26,791 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,799 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,804 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:26,805 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,809 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,816 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:26,817 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,821 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:26,822 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,826 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,829 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:26,830 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,834 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,839 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:26,840 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:26,843 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:26,844 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [18] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,494 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - WCF - GetLicenseDetails
+2018-08-28 11:16:59,496 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - GetLicenseDetails
+2018-08-28 11:16:59,497 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,502 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,507 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:59,508 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,512 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,523 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:59,524 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,529 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:59,529 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,533 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,537 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:59,538 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,541 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,550 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:16:59,550 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:16:59,554 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:16:59,554 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [52] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:08,160 DEBUG Service   [4] - EAPTaskManager - ProcessTask: Automatic
+2018-08-28 11:17:08,186 DEBUG Service   [4] -  - AddingTask - Automatic id: 305ae0a6-d6df-459b-9bc5-a94a00b9f885
+2018-08-28 11:17:08,187 DEBUG Service   [4] -  # Tasks waiting in queue: - 0
+2018-08-28 11:17:12,981 DEBUG Service   [14] -  - RemovingTask from queue - Automatic id: 305ae0a6-d6df-459b-9bc5-a94a00b9f885
+2018-08-28 11:17:12,982 DEBUG Service   [14] -  # Tasks waiting in queue: - 0
+2018-08-28 11:17:12,983 DEBUG Service   [14] -  Starting task: Automatic
+2018-08-28 11:17:12,984 DEBUG Service   [7] - DiscoveryTask - ExecuteTask Started:  Automatic job: Discovery processing step: notExpanded for task dbID: 305ae0a6-d6df-459b-9bc5-a94a00b9f885
+2018-08-28 11:17:12,994 DEBUG Service   [7] - Task.OptimizeNumberOfTasksAndSetupCheckPointRestart Initialized Parent Task Status to running 
+2018-08-28 11:17:13,042 DEBUG Service   [7] - Task.OptimizeNumberOfTasksAndSetupCheckPointRestart - Creating another worker task: Automatic.lxx.0 containing # devices: 0
+2018-08-28 11:17:13,046 DEBUG Service   [7] - BizLogicMgr Create Task name: Automatic.lxx.0  PersistToDB: True isSynchronous: False
+2018-08-28 11:17:13,047 DEBUG Service   [7] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:13,069 DEBUG Service   [7] -  EAPScheduledTask constructor: Next Run time: 8/28/18 11:17
+2018-08-28 11:17:13,123 DEBUG Service   [7] - BizLogicMgr Create Task name: Automatic.lxx.0 returning
+2018-08-28 11:17:13,138 DEBUG Service   [7] - Task.OptimizeNumberOfTasksAndSetupCheckPointRestart - Done
+2018-08-28 11:17:13,139 DEBUG Service   [7] -  Parent task stopping, created workers: Automatic
+2018-08-28 11:17:13,196 DEBUG Service   [4] - EAPTaskManager - ProcessTask: Automatic.lxx.0
+2018-08-28 11:17:13,211 DEBUG Service   [4] -  - AddingTask - Automatic.lxx.0 id: cb4f85a7-dc72-49c9-9203-a94a00ba00e3
+2018-08-28 11:17:13,212 DEBUG Service   [4] -  # Tasks waiting in queue: - 0
+2018-08-28 11:17:14,853 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - WCF - GetLicenseDetails
+2018-08-28 11:17:14,856 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - GetLicenseDetails
+2018-08-28 11:17:14,857 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:14,862 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:14,878 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:17:14,879 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:14,883 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:14,891 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:17:14,892 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:14,896 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:17:14,896 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:14,900 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:14,903 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:17:14,904 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:14,908 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:14,912 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:17:14,913 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:14,916 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:17:14,917 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [415] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,532 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - WCF - GetLicenseDetails
+2018-08-28 11:17:16,534 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - GetLicenseDetails
+2018-08-28 11:17:16,535 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,541 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,545 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:17:16,546 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,551 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,558 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:17:16,559 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,563 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:17:16,564 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,567 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,578 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:17:16,579 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,583 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,588 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - ServerConfig.UpdateLocalAddresses: IP address(es): 10.80.127.153
+2018-08-28 11:17:16,589 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:16,592 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerFirstIpAddress from: 10.80.127.153
+2018-08-28 11:17:16,593 DEBUG Service NT AUTHORITY\NETWORK SERVICE  [420] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:18,014 DEBUG Service   [14] -  - RemovingTask from queue - Automatic.lxx.0 id: cb4f85a7-dc72-49c9-9203-a94a00ba00e3
+2018-08-28 11:17:18,015 DEBUG Service   [14] -  # Tasks waiting in queue: - 0
+2018-08-28 11:17:18,016 DEBUG Service   [14] -  Starting task: Automatic.lxx.0
+2018-08-28 11:17:18,018 DEBUG Service   [7] - DiscoveryTask - ExecuteTask Started:  Automatic.lxx.0 job: Discovery processing step: expanded for task dbID: cb4f85a7-dc72-49c9-9203-a94a00ba00e3
+2018-08-28 11:17:18,048 DEBUG Service   [7] - Task.OptimizeNumberOfTasksAndSetupCheckPointRestart - already expanded returning - Automatic.lxx.0  type: Worker  ProcessingStep: expanded
+2018-08-28 11:17:18,049 DEBUG Service   [7] -  worker task: Automatic.lxx.0  remaining # devices to process: 0
+2018-08-28 11:17:18,050 DEBUG Service   [7] - Task: Automatic.lxx.0  workerTaskState:  parentID: 305ae0a6-d6df-459b-9bc5-a94a00b9f885 A#: 0 R#: 0 D#: 0 total devices: 0
+2018-08-28 11:17:18,051 DEBUG Service   [7] - Task.RegisterTask: Automatic.lxx.0
+2018-08-28 11:17:18,052 DEBUG Service   [7] - ScheduleTaskManager - Registereing task: Automatic.lxx.0 type:Worker 7 cb4f85a7-dc72-49c9-9203-a94a00ba00e3
+2018-08-28 11:17:18,061 DEBUG Service   [7] - ScheduleTaskManager.UpdateTaskTracking   parentID: 305ae0a6-d6df-459b-9bc5-a94a00b9f885 A#: 0 R#: 0 D#: 0 total devices: 0 substractCounters: False
+2018-08-28 11:17:18,062 DEBUG Service   [7] - ScheduleTaskManager.UpdateTaskTracking  - parent not found 
+2018-08-28 11:17:18,063 DEBUG Service   [7] - ScheduleTaskManager.UpdateParentsToRunningTasksRelationshipAndCounters  with:  parentID: 305ae0a6-d6df-459b-9bc5-a94a00b9f885 A#: 0 R#: 0 D#: 0 total devices: 0 substractCounters: False final task status: None propagateStatusMsgToParent: False
+2018-08-28 11:17:18,065 DEBUG Service   [7] -  Adding Parent's task via worker:   ParentTask - dbID: 305ae0a6-d6df-459b-9bc5-a94a00b9f885 A#: 0 R#: 0 D#: 0 taskStatus: None
+2018-08-28 11:17:18,072 DEBUG Service   [7] - ScheduleTaskManager - Successfully Registered task: Automatic.lxx.0 type:Worker 7 cb4f85a7-dc72-49c9-9203-a94a00ba00e3
+2018-08-28 11:17:18,073 DEBUG Service   [7] - --Number of running tasks after Register: 0
+2018-08-28 11:17:18,074 DEBUG Service   [7] - Task.RegisterTask Done: Automatic.lxx.0
+2018-08-28 11:17:18,075 DEBUG Service   [7] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:18,084 DEBUG Service   [7] - DiscoveryTask - ExecuteTask Ended:  Automatic.lxx.0 job: Discovery for task: cb4f85a7-dc72-49c9-9203-a94a00ba00e3
+2018-08-28 11:17:23,968 DEBUG Service   [5] - BizLogicMgr - GetRootGroupsPrivate
+2018-08-28 11:17:23,969 DEBUG Service   [5] - Initializing LSGroups - GetLSGroupsFromDB()
+2018-08-28 11:17:23,990 DEBUG Service   [5] - FindGroup guid: 79dbd7a0-7427-4aa6-abc0-a335ae58f5e3
+2018-08-28 11:17:23,993 DEBUG Service   [5] - Found group: All Devices Group guid: 79dbd7a0-7427-4aa6-abc0-a335ae58f5e3
+2018-08-28 11:17:23,994 DEBUG Service   [5] - OnDiscoveryUpdate - Found 10 uder the task d3606527-53f0-4089-8baf-a94a00a9637b
+2018-08-28 11:17:23,997 DEBUG Service   [5] - SelectDeviceAndMergeData -  IpAddress: 10.80.127.97 HostName: 
+2018-08-28 11:17:24,025 DEBUG Service   [5] - TryGetDevice -serial#:  model: Zebra Printer mac:00074D3E2FD7: ip: 10.80.127.97  hostName:  db id: 00000000-0000-0000-0000-000000000000 okMatchOnIP: True okMatchOnHostName: True okMatchOnDbID: False buildIfNotFound: True inTestMode: False
+2018-08-28 11:17:24,045 DEBUG Service   [5] - TryGetDevice - NOT found via IP and blank mac: 10.80.127.97
+2018-08-28 11:17:24,047 DEBUG Service   [5] - TryGetDevice - NOT found via IP only: 10.80.127.97
+2018-08-28 11:17:24,048 DEBUG Service   [5] - TryGetDevice - NOT found: building new device 
+2018-08-28 11:17:24,049 DEBUG Service   [5] - BizLogicMgr -  CreateDeviceDB - serial#  model: Zebra Printer
+2018-08-28 11:17:24,051 DEBUG Service   [5] - Device UpdateValidSerialNumberAndModel - Setting model: Zebra Printer
+2018-08-28 11:17:24,052 DEBUG Service   [5] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:24,056 DEBUG Service   [5] - BizLogicMgr -  CreateDeviceDB - returning device:    serial#:  model: Zebra Printer ID: 00000000-0000-0000-0000-000000000000
+2018-08-28 11:17:24,062 DEBUG Service   [5] - Device - AddOrMergeConnection:  Ip: 10.80.127.97  Mac: 00074D3E2FD7    to device:    serial#:  model: Zebra Printer   ok to update HostName: True   make Active Connection: True
+2018-08-28 11:17:24,063 DEBUG Service   [5] - Device - Adding Connection:  Ip: 10.80.127.97  Mac: 00074D3E2FD7 
+2018-08-28 11:17:24,067 DEBUG Service   [5] - Device Setting Active connection to:  Ip: 10.80.127.97  Mac: 00074D3E2FD7  for device:  10.80.127.97  serial#:  model: Zebra Printer
+2018-08-28 11:17:24,069 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [5] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-28 11:17:37,521 DEBUG Service   [7] - BizLogicMgr - GetRootGroupsPrivate
+2018-08-28 11:17:37,522 DEBUG Service   [7] - Initializing LSGroups - GetLSGroupsFromDB()
+2018-08-28 11:17:37,525 DEBUG Service   [4] - LocksmithDiscoveryObject - Discovery Complete for d3606527-53f0-4089-8baf-a94a00a9637b
+2018-08-28 11:17:37,550 DEBUG Service   [7] - FindGroup guid: 79dbd7a0-7427-4aa6-abc0-a335ae58f5e3
+2018-08-28 11:17:37,551 DEBUG Service   [7] - Found group: All Devices Group guid: 79dbd7a0-7427-4aa6-abc0-a335ae58f5e3
+2018-08-28 11:17:37,552 DEBUG Service   [7] - OnDiscoveryUpdate - Found 4 uder the task d3606527-53f0-4089-8baf-a94a00a9637b
+2018-08-28 11:17:37,553 DEBUG Service   [7] - SelectDeviceAndMergeData -  IpAddress: 10.80.127.51 HostName: 
+2018-08-28 11:17:37,554 DEBUG Service   [7] - TryGetDevice -serial#:  model: Zebra Printer mac:00074D465187: ip: 10.80.127.51  hostName:  db id: 00000000-0000-0000-0000-000000000000 okMatchOnIP: True okMatchOnHostName: True okMatchOnDbID: False buildIfNotFound: True inTestMode: False
+2018-08-28 11:17:37,559 DEBUG Service   [7] - TryGetDevice - NOT found via IP and blank mac: 10.80.127.51
+2018-08-28 11:17:37,562 DEBUG Service   [7] - TryGetDevice - NOT found via IP only: 10.80.127.51
+2018-08-28 11:17:37,563 DEBUG Service   [7] - TryGetDevice - NOT found: building new device 
+2018-08-28 11:17:37,563 DEBUG Service   [7] - BizLogicMgr -  CreateDeviceDB - serial#  model: Zebra Printer
+2018-08-28 11:17:37,564 DEBUG Service   [7] - Device UpdateValidSerialNumberAndModel - Setting model: Zebra Printer
+2018-08-28 11:17:37,565 DEBUG Service   [7] - BizLogicMgr - GetServerConfig
+2018-08-28 11:17:37,569 DEBUG Service   [7] - BizLogicMgr -  CreateDeviceDB - returning device:    serial#:  model: Zebra Printer ID: 00000000-0000-0000-0000-000000000000
+2018-08-28 11:17:37,570 DEBUG Service   [7] - Device - AddOrMergeConnection:  Ip: 10.80.127.51  Mac: 00074D465187    to device:    serial#:  model: Zebra Printer   ok to update HostName: True   make Active Connection: True
+2018-08-28 11:17:37,570 DEBUG Service   [7] - Device - Adding Connection:  Ip: 10.80.127.51  Mac: 00074D465187 
+2018-08-28 11:17:37,571 DEBUG Service   [7] - Device Setting Active connection to:  Ip: 10.80.127.51  Mac: 00074D465187  for device:  10.80.127.51  serial#:  model: Zebra Printer
+2018-08-28 11:17:37,573 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [7] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-28 11:17:47,529 DEBUG Service   [4] - DiscoveryTask - OnDiscoveryComplete event received for task - Automatic.uxv.0
+2018-08-28 11:17:47,531 DEBUG Service   [4] - BizLogicMgr - GetServerConfig
+2018-08-28 11:19:30,269 DEBUG Service   [308] - BizLogicMgr - GetRootGroupsPrivate
+2018-08-28 11:19:30,270 DEBUG Service   [308] - Initializing LSGroups - GetLSGroupsFromDB()
+2018-08-28 11:19:30,291 DEBUG Service   [308] - FindGroup guid: 79dbd7a0-7427-4aa6-abc0-a335ae58f5e3
+2018-08-28 11:19:30,292 DEBUG Service   [308] - Found group: All Devices Group guid: 79dbd7a0-7427-4aa6-abc0-a335ae58f5e3
+2018-08-28 11:19:30,293 DEBUG Service   [308] - OnDiscoveryUpdate - Found 10 uder the task cb4f85a7-dc72-49c9-9203-a94a00ba00e3
+2018-08-28 11:19:30,294 DEBUG Service   [308] - SelectDeviceAndMergeData -  IpAddress: 10.80.127.97 HostName: 
+2018-08-28 11:19:30,295 DEBUG Service   [308] - TryGetDevice -serial#:  model: Zebra Printer mac:00074D3E2FD7: ip: 10.80.127.97  hostName:  db id: 00000000-0000-0000-0000-000000000000 okMatchOnIP: True okMatchOnHostName: True okMatchOnDbID: False buildIfNotFound: True inTestMode: False
+2018-08-28 11:19:30,300 DEBUG Service   [308] - TryGetDevice - NOT found via IP and blank mac: 10.80.127.97
+2018-08-28 11:19:30,303 DEBUG Service   [308] - TryGetDevice - NOT found via IP only: 10.80.127.97
+2018-08-28 11:19:30,304 DEBUG Service   [308] - TryGetDevice - NOT found: building new device 
+2018-08-28 11:19:30,305 DEBUG Service   [308] - BizLogicMgr -  CreateDeviceDB - serial#  model: Zebra Printer
+2018-08-28 11:19:30,306 DEBUG Service   [308] - Device UpdateValidSerialNumberAndModel - Setting model: Zebra Printer
+2018-08-28 11:19:30,307 DEBUG Service   [308] - BizLogicMgr - GetServerConfig
+2018-08-28 11:19:30,312 DEBUG Service   [308] - BizLogicMgr -  CreateDeviceDB - returning device:    serial#:  model: Zebra Printer ID: 00000000-0000-0000-0000-000000000000
+2018-08-28 11:19:30,313 DEBUG Service   [308] - Device - AddOrMergeConnection:  Ip: 10.80.127.97  Mac: 00074D3E2FD7    to device:    serial#:  model: Zebra Printer   ok to update HostName: True   make Active Connection: True
+2018-08-28 11:19:30,314 DEBUG Service   [308] - Device - Adding Connection:  Ip: 10.80.127.97  Mac: 00074D3E2FD7 
+2018-08-28 11:19:30,315 DEBUG Service   [308] - Device Setting Active connection to:  Ip: 10.80.127.97  Mac: 00074D3E2FD7  for device:  10.80.127.97  serial#:  model: Zebra Printer
+2018-08-28 11:19:30,316 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [308] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-28 11:19:36,682 DEBUG Service   [308] - BizLogicMgr - GetRootGroupsPrivate
+2018-08-28 11:19:36,682 DEBUG Service   [7] - LocksmithDiscoveryObject - Discovery Complete for cb4f85a7-dc72-49c9-9203-a94a00ba00e3
+2018-08-28 11:19:36,683 DEBUG Service   [308] - Initializing LSGroups - GetLSGroupsFromDB()
+2018-08-28 11:19:36,705 DEBUG Service   [308] - FindGroup guid: 79dbd7a0-7427-4aa6-abc0-a335ae58f5e3
+2018-08-28 11:19:36,706 DEBUG Service   [308] - Found group: All Devices Group guid: 79dbd7a0-7427-4aa6-abc0-a335ae58f5e3
+2018-08-28 11:19:36,708 DEBUG Service   [308] - OnDiscoveryUpdate - Found 4 uder the task cb4f85a7-dc72-49c9-9203-a94a00ba00e3
+2018-08-28 11:19:36,709 DEBUG Service   [308] - SelectDeviceAndMergeData -  IpAddress: 10.80.127.92 HostName: 
+2018-08-28 11:19:36,710 DEBUG Service   [308] - TryGetDevice -serial#:  model: Zebra Printer mac:000C29159595: ip: 10.80.127.92  hostName:  db id: 00000000-0000-0000-0000-000000000000 okMatchOnIP: True okMatchOnHostName: True okMatchOnDbID: False buildIfNotFound: True inTestMode: False
+2018-08-28 11:19:36,715 DEBUG Service   [308] - TryGetDevice - NOT found via IP and blank mac: 10.80.127.92
+2018-08-28 11:19:36,717 DEBUG Service   [308] - TryGetDevice - NOT found via IP only: 10.80.127.92
+2018-08-28 11:19:36,718 DEBUG Service   [308] - TryGetDevice - NOT found: building new device 
+2018-08-28 11:19:36,719 DEBUG Service   [308] - BizLogicMgr -  CreateDeviceDB - serial#  model: Zebra Printer
+2018-08-28 11:19:36,720 DEBUG Service   [308] - Device UpdateValidSerialNumberAndModel - Setting model: Zebra Printer
+2018-08-28 11:19:36,721 DEBUG Service   [308] - BizLogicMgr - GetServerConfig
+2018-08-28 11:19:36,725 DEBUG Service   [308] - BizLogicMgr -  CreateDeviceDB - returning device:    serial#:  model: Zebra Printer ID: 00000000-0000-0000-0000-000000000000
+2018-08-28 11:19:36,726 DEBUG Service   [308] - Device - AddOrMergeConnection:  Ip: 10.80.127.92  Mac: 000C29159595    to device:    serial#:  model: Zebra Printer   ok to update HostName: True   make Active Connection: True
+2018-08-28 11:19:36,726 DEBUG Service   [308] - Device - Adding Connection:  Ip: 10.80.127.92  Mac: 000C29159595 
+2018-08-28 11:19:36,727 DEBUG Service   [308] - Device Setting Active connection to:  Ip: 10.80.127.92  Mac: 000C29159595  for device:  10.80.127.92  serial#:  model: Zebra Printer
+2018-08-28 11:19:36,728 ERROR Service  System.NullReferenceException: Object reference not set to an instance of an object.__   at LocksmithBusinessLogic.DiscoveryTask.OnDiscoveryUpdate(Object sender, EventArgs eventArgs)
+ [308] - DiscoveryTask - OnDiscovery Update Exception: -
+2018-08-28 11:19:46,684 DEBUG Service   [7] - DiscoveryTask - OnDiscoveryComplete event received for task - Automatic.lxx.0
+2018-08-28 11:19:46,685 DEBUG Service   [7] - BizLogicMgr - GetServerConfig
