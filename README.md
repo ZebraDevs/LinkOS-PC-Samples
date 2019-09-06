@@ -1,17 +1,8 @@
 # LinkOS-PC-Samples
 
-## Projects contained in this repository:
-
-[ZSDK_DevDemos_Java]( https://github.com/Zebra/LinkOS-PC-Samples/tree/ZSDK_DevDemos_Java)
-
-[ZSDK_DevDemos_.NET]( https://github.com/Zebra/LinkOS-PC-Samples/tree/ZSDK_DevDemos_.NET)
-
-[SmartCard_DevDemo_.NET]( https://github.com/Zebra/LinkOS-PC-Samples/tree/SmartCard_DevDemo_.NET)
-
-# Notes
 All card printer sample code is selectable from the branches on this repository.
 
-This sample code is designed to work with the [Link-OS Multiplatform SDK](http://www.zebra.com/sdk).
+This sample code is designed to work with the [Link-OS Multiplatform SDK](http://www.zebra.com/cardSDK).
 
 Find [API Documentation](http://techdocs.zebra.com/link-os) here.
 
