@@ -6,8 +6,6 @@
 
 [ZSDK_DevDemos_.NET]( https://github.com/Zebra/LinkOS-PC-Samples/tree/ZSDK_DevDemos_.NET)
 
-[SmartCard_SampleCode_.NET]( https://github.com/Zebra/LinkOS-PC-Samples/tree/SmartCard_SampleCode_.NET)
-
 # Notes
 All card printer sample code is selectable from the branches on this repository.
 
