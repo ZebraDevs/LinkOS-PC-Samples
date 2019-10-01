@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Zebra.Windows.DevDemo.Demos.PrinterStatus.PrinterStatusView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Zebra.Windows.DevDemo.Demos.PrinterStatus"
+             xmlns:usercontrols="clr-namespace:Zebra.Windows.DevDemo.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Style="{StaticResource ZebraHeader}" Margin="0,0,0,10">Printer Status</TextBlock>
+        <usercontrols:ConnectionSelectorView x:Name="connectionSelector" Grid.Row="1" Margin="0,0,0,15" />
+        <Button x:Name="getPrinterStatusButton" Grid.Row="2" Click="GetPrinterStatusButton_Click">Get Printer Status</Button>
+        <Separator Grid.Row="3" Margin="0,15,0,15" />
+        <TextBlock Style="{StaticResource ZebraHeader}" Grid.Row="4" Margin="0,0,0,10">Printer Status</TextBlock>
+        <TextBox x:Name="printerStatus" Grid.Row="5" AcceptsReturn="True" TextWrapping="NoWrap" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+    </Grid>
+</UserControl>
